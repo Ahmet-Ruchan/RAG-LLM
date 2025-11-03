@@ -1,0 +1,2829 @@
+[
+  {
+   "input": "Desmopressin etken maddesinin 'primer enurezis nokturna' tanısıyla ayaktan tedavide ödeme koşulu nedir?",
+   "output": {
+    "kuralId": "EK4F.5.1",
+    "kaynakBelge": "EK-4/F",
+    "etkenMadde": "Desmopressin",
+    "kullanimAlani": "Ayaktan Tedavi",
+    "endikasyon": "Primer enurezis nokturna",
+    "gereklilikler": {
+     "raporTuru": "Yok (Raporsuz)",
+     "raporSuresi": null,
+     "receteDuzenleyenHekimler": {
+      "branslar": [
+       "Uzman Hekimler"
+      ],
+      "kural": "SADECE_BU"
+     }
+    }
+   }
+  },
+  {
+   "input": "Desmopressin'in 'hafif hemofili A' ve 'von Willebrand' hastalığında kanama profilaksisi için ödeme kuralı nedir?",
+   "output": {
+    "kuralId": "EK4F.5.2",
+    "kaynakBelge": "EK-4/F",
+    "etkenMadde": "Desmopressin",
+    "kullanimAlani": "Ayaktan Tedavi",
+    "endikasyon": "Hafif hemofili A / Von Willebrand hastalığı (Tip 2B ve 3 hariç) küçük cerrahi müdahalelerde kanama kontrolü/profilaksisi",
+    "kosullar": [
+     {
+      "tip": "HASTA_DURUMU",
+      "aciklama": "Test dozuna olumlu yanıt veren"
+     }
+    ],
+    "gereklilikler": {
+     "raporTuru": "Uzman Hekim Raporu",
+     "raporDuzenleyenHekimler": {
+      "branslar": [
+       "Hematoloji"
+      ],
+      "kural": "SADECE_BU"
+     },
+     "receteDuzenleyenHekimler": {
+      "branslar": [
+       "Hematoloji",
+       "İç Hastalıkları",
+       "Çocuk Sağlığı ve Hastalıkları"
+      ],
+      "kural": "EN_AZ_BIRI"
+     }
+    }
+   }
+  },
+  {
+   "input": "Riluzol Oral Süspansiyon formunun ALS hastalarında ödenme şartı nedir?",
+   "output": {
+    "kuralId": "EK4F.7.1",
+    "kaynakBelge": "EK-4/F",
+    "etkenMadde": "Riluzol (Oral Süspansiyon)",
+    "endikasyon": "Amiyotrofik Lateral Skleroz (ALS)",
+    "kosullar": [
+     {
+      "tip": "HASTA_DURUMU",
+      "aciklama": "Yutma güçlüğü olan VEYA Perkutan Endoskopik Gastrostomi (PEG) kullanan"
+     }
+    ],
+    "gereklilikler": {
+     "raporTuru": "Uzman Hekim Raporu",
+     "raporDuzenleyenHekimler": {
+      "branslar": [
+       "Nöroloji"
+      ],
+      "kural": "SADECE_BU"
+     },
+     "receteDuzenleyenHekimler": {
+      "branslar": [
+       "TÜM_HEKİMLER"
+      ],
+      "kural": "TÜMÜ"
+     }
+    }
+   }
+  },
+  {
+   "input": "Atomoksetine etken maddesi hangi yaş aralığında ve hangi raporla ödenir?",
+   "output": {
+    "kuralId": "EK4F.16",
+    "kaynakBelge": "EK-4/F",
+    "etkenMadde": "Atomoksetine",
+    "kosullar": [
+     {
+      "tip": "YAS_GRUP",
+      "aciklama": "6-25 yaş arası hastalar"
+     },
+     {
+      "tip": "ISTISNA_YAS_GRUP",
+      "aciklama": "16-18 ergen yaş grubunda ayrıca erişkin psikiyatri uzmanlarınca da rapor/reçete düzenlenebilir."
+     }
+    ],
+    "gereklilikler": {
+     "raporTuru": "Sağlık Kurulu Raporu",
+     "raporDuzenleyenHekimler": {
+      "branslar": [
+       "Psikiyatri"
+      ],
+      "kural": "EN_AZ_BIRININ_YER_ALDIGI"
+     },
+     "receteDuzenleyenHekimler": {
+      "branslar": [
+       "Psikiyatri",
+       "Çocuk Sağlığı ve Hastalıkları"
+      ],
+      "kural": "EN_AZ_BIRI"
+     }
+    }
+   }
+  },
+  {
+   "input": "Omalizumab'ın (Xolair) 'Ağır Persistan Alerjik Astım' tanısıyla ödenmesi için gereken rapor, hekim ve laboratuvar koşulları nelerdir?",
+   "output": {
+    "kuralId": "EK4F.49.a",
+    "kaynakBelge": "EK-4/F",
+    "etkenMadde": "Omalizumab",
+    "endikasyon": "Ağır persistan alerjik astım",
+    "kosullar": [
+     {
+      "tip": "YAS_GRUP",
+      "aciklama": "12 yaş ve üzeri"
+     },
+     {
+      "tip": "HASTA_DURUMU",
+      "aciklama": "Vücut ağırlığı 20-150 kg"
+     },
+     {
+      "tip": "ONCEKI_TEDAVI_YANITSIZLIGI",
+      "aciklama": "Yüksek doz kortikosteroid ve uzun etkili beta 2 agonist ve/veya lökotrien reseptör antagonisti tedavisine rağmen yanıt alınamayan"
+     },
+     {
+      "tip": "TANI_DOGRULAMA",
+      "aciklama": "En az bir prenial alerjene duyarlı (cilt testi veya spesifik IgE pozitifliği ile)"
+     },
+     {
+      "tip": "LAB_TEST",
+      "aciklama": "Serum IgE düzeyi 30-1500 IU/ml olmalı (raporda belirtilmeli)"
+     }
+    ],
+    "gereklilikler": {
+     "raporTuru": "Sağlık Kurulu Raporu (Başlangıç)",
+     "raporSuresi": "16 Hafta",
+     "raporDuzenleyenHekimler": {
+      "branslar": [
+       "Göğüs Hastalıkları",
+       "İmmünoloji",
+       "Alerji",
+       "İmmünoloji ve Alerji Hastalıkları"
+      ],
+      "kural": "EN_AZ_IKISININ_YER_ALDIGI"
+     },
+     "devamKurali": "16 hafta sonunda cevap alınması halinde, bu durumun belirtileceği 1 yıl süreli yeni sağlık kurulu raporu düzenlenir."
+    }
+   }
+  },
+  {
+   "input": "Paliperidon'un 3 aylık depo parenteral formuna geçiş kuralı nedir?",
+   "output": {
+    "kuralId": "EK4F.39.1",
+    "kaynakBelge": "EK-4/F",
+    "etkenMadde": "Paliperidon (3 aylık depo parenteral formları)",
+    "kosullar": [
+     {
+      "tip": "ONCEKI_TEDAVI",
+      "aciklama": "Aralıksız en az 4 ay süreyle paliperidonun 1 aylık depo parenteral formunun kullanımı"
+     },
+     {
+      "tip": "HASTA_DURUMU",
+      "aciklama": "Klinik olarak stabil olan hastalar (raporda belirtilmeli)"
+     }
+    ],
+    "gereklilikler": {
+     "raporTuru": "Sağlık Kurulu Raporu",
+     "raporSuresi": "1 Yıl",
+     "raporDuzenleyenHekimler": {
+      "branslar": [
+       "Psikiyatri"
+      ],
+      "kural": "EN_AZ_BIRININ_BULUNDUGU"
+     },
+     "receteDuzenleyenHekimler": {
+      "branslar": [
+       "Psikiyatri"
+      ],
+      "kural": "SADECE_BU"
+     }
+    }
+   }
+  },
+  {
+   "input": "Lipozomal Amfoterisin B (Ambisome) hangi durumlarda ve hangi raporla ödenir?",
+   "output": {
+    "kuralId": "EK4E.1.a",
+    "kaynakBelge": "EK-4/E (Sistemik Antimikrobik Kuralları)",
+    "etkenMadde": "Amfoterisin B (Lipozomal veya Lipid kompleks)",
+    "kosullar": [
+     {
+      "tip": "HASTANE_TIPI",
+      "aciklama": "Rapor sadece Üniversite veya Eğitim ve Araştırma Hastanelerinde düzenlenebilir"
+     },
+     {
+      "tip": "HASTA_DURUMU_Veya_YANITSIZLIK",
+      "aciklama": "YALNIZCA; a) Deoksikolat formuna intolerans VEYA toksisite, b) Ampirik tedaviye yanıtsız febril nötropeni, c) AIDS'li hastalarda Viseral leishmaniasis, d) Sistemik fungal enfeksiyonlu böbrek yetmezliği (Kreatinin >= 2.5 mg/dL) OLAN HASTALARDA"
+     }
+    ],
+    "gereklilikler": {
+     "raporTuru": "Sağlık Kurulu Raporu",
+     "raporDuzenleyenHekimler": {
+      "branslar": [
+       "Enfeksiyon Hastalıkları",
+       "Mikrobiyoloji ve Klinik Mikrobiyoloji",
+       "Çocuk Enfeksiyon Hastalıkları",
+       "Hematoloji",
+       "Tıbbi Onkoloji",
+       "vb. (ilgili branş uzmanı)"
+      ],
+      "kural": "EN_AZ_BIRININ_YER_ALDIGI"
+     }
+    }
+   }
+  },
+  {
+   "input": "Parenteral Vankomisin veya Teikoplanin ayaktan tedavide nasıl ödenir?",
+   "output": {
+    "kuralId": "EK4E.10.Ayaktan",
+    "kaynakBelge": "EK-4/E (Sistemik Antimikrobik Kuralları)",
+    "etkenMadde": [
+     "Vankomisin (Parenteral)",
+     "Teikoplanin (Parenteral)"
+    ],
+    "kullanimAlani": "Ayaktan Tedavi",
+    "endikasyon": "Dirençli gram-pozitif bakteri enfeksiyonları (MRSA vb.)",
+    "kosullar": [
+     {
+      "tip": "TANI_DOGRULAMA",
+      "aciklama": "Kültür sonucu (veya acil durumlarda kültür alınması koşuluyla)"
+     }
+    ],
+    "gereklilikler": {
+     "raporTuru": "Uzman Hekim Raporu",
+     "raporSuresi": "En fazla 10 gün (Bu süre raporda belirtilmelidir)",
+     "raporDuzenleyenHekimler": {
+      "branslar": [
+       "Enfeksiyon Hastalıkları",
+       "Çocuk Enfeksiyon Hastalıkları"
+      ],
+      "kural": "EN_AZ_BIRI"
+     },
+     "receteDuzenleyenHekimler": {
+      "branslar": [
+       "Enfeksiyon Hastalıkları",
+       "Çocuk Enfeksiyon Hastalıkları",
+       "İç Hastalıkları",
+       "Çocuk Sağlığı ve Hastalıkları"
+      ],
+      "kural": "EN_AZ_BIRI"
+     }
+    }
+   }
+  },
+  {
+   "input": "Dornaz alfa (Pulmozyme) ayaktan tedavide ödenir mi?",
+   "output": {
+    "kuralId": "EK4G.Kural.DornazAlfa",
+    "kaynakBelge": "EK-4/G (Sadece Yatarak Tedavilerde Kullanımı Halinde Bedelleri Ödenecek İlaçlar Listesi)",
+    "etkenMadde": "Dornaz alfa",
+    "kullanimAlani": "Yatan Tedavi",
+    "endikasyon": "Kistik Fibrozis",
+    "kosullar": [
+     {
+      "tip": "KULLANIM_KISITI",
+      "aciklama": "Bu ilaç SADECE yatarak tedavilerde (hastane yatışında) Kistik Fibrozis tanısıyla kullanılırsa bedeli ödenir."
+     }
+    ],
+    "gereklilikler": {
+     "sonuc": "Ayaktan tedavide (poliklinik reçetesi) ÖDENMEZ."
+    }
+   }
+  },
+  {
+   "input": "İnek Sütü Alerjisi olan 1 yaşından küçük bebekler için tıbbi mama ödeme koşulları nedir?",
+   "output": {
+    "kuralId": "EK4B.ISA.Kural",
+    "kaynakBelge": "EK-4/B (Tıbbi Mamalar Listesi)",
+    "urunTipi": "İnek Sütü Alerjisi / Çoklu Gıda Alerjisi Diyet Ürünleri",
+    "kosullar": [
+     {
+      "tip": "YAS_GRUP",
+      "aciklama": "12 aylıktan küçük hastalar"
+     }
+    ],
+    "gereklilikler": {
+     "raporTuru": "Uzman Hekim Raporu",
+     "raporSuresi": "6 Ay",
+     "raporDuzenleyenHekimler": {
+      "branslar": [
+       "Çocuk İmmünoloji ve Alerji Hastalıkları",
+       "Çocuk Gastroenteroloji"
+      ],
+      "kural": "EN_AZ_BIRI"
+     },
+     "receteDuzenleyenHekimler": {
+      "branslar": [
+       "Çocuk İmmünoloji ve Alerji Hastalıkları",
+       "Çocuk Gastroenteroloji",
+       "Çocuk Sağlığı ve Hastalıkları"
+      ],
+      "kural": "EN_AZ_BIRI"
+     }
+    }
+   }
+  },
+  {
+   "input": "EK-4/D listesindeki ilaçlar için genel kural nedir?",
+   "output": {
+    "kuralId": "EK4D.GenelKural",
+    "kaynakBelge": "EK-4/D (Hasta Katılım Payından Muaf İlaçlar Listesi)",
+    "aciklama": "Bu liste, kronik hastalıkların tedavisinde kullanılan ve hasta katılım payından muaf tutulan ilaçları (örn: Kanser, Diyabet, Astım, Hipertansiyon, MS ilaçları) içerir.",
+    "kosullar": [
+     {
+      "tip": "RAPOR_KOSULU",
+      "aciklama": "İlacın katılım payından muaf olması için genellikle ilgili kronik hastalık tanısını içeren bir sağlık raporu (örn: EK-4/F'ye uygun) ile reçete edilmesi gerekir."
+     }
+    ],
+    "gereklilikler": {
+     "sonuc": "Hasta katılım payından muaftır."
+    }
+   }
+  },
+  {
+   "input": "Bir ilacın SGK tarafından ödenebilmesi için en temel kural nedir?",
+   "output": {
+    "kuralId": "EK4A.TemelKural",
+    "kaynakBelge": "EK-4/A (Bedeli Ödenecek İlaçlar Listesi)",
+    "aciklama": "Ana Ödeme İzin Listesi (Master Allow-List)",
+    "kosullar": [
+     {
+      "tip": "LISTE_KONTROLU",
+      "aciklama": "Bir ilacın (veya mamanın EK-4/B, yurt dışı ilacın EK-4/C) bedelinin ödenebilmesi için, barkodunun/adının öncelikle bu 'Bedeli Ödenecek İlaçlar Listesi'nde yer alması zorunludur."
+     }
+    ],
+    "gereklilikler": {
+     "sonuc": "Listede olmayan bir ilaç, diğer tüm rapor/reçete kuralları (EK-4/F, EK-4/E vb.) sağlansa bile ödenmez."
+    }
+   }
+  },
+  {
+   "input": "SUT ana metnine göre, aksi belirtilmedikçe sağlık raporları ne kadar süreyle geçerlidir?",
+   "output": {
+    "kuralId": "SUT.Genel.RaporSuresi",
+    "kaynakBelge": "SUT Ana Metni (Genel Hükümler)",
+    "aciklama": "Genel Rapor Geçerlilik Kuralı",
+    "kosullar": [
+     {
+      "tip": "KURAL_ISTISNASI",
+      "aciklama": "Raporda spesifik bir süre (örn: 6 ay, 1 yıl) belirtilmemişse VEYA ilacın/tedavinin özel maddesinde (örn: EK-4/F'de) spesifik bir süre (örn: 16 hafta) tanımlanmamışsa"
+     }
+    ],
+    "gereklilikler": {
+     "sonuc": "Sağlık kurulu raporları ve uzman hekim raporları, aksi belirtilmedikçe düzenlendiği tarihten itibaren 2 (iki) yıl süreyle geçerlidir. (İstisnalar hariç)."
+    }
+   }
+  },
+  {
+   "input": "Donepezil, Rivastigmin, Galantamine ve Memantine etken maddelerinin hem raporlu hem de raporsuz ödenme koşulları arasındaki fark nedir?",
+   "output": {
+    "kuralId": "EK4F.Madde6",
+    "kaynakBelge": "EK-4/F",
+    "etkenMadde": [
+     "Donepezil HCI",
+     "Galantamine",
+     "Memantine",
+     "Rivastigmin"
+    ],
+    "aciklama": "Bu kural çift koşulludur. Belirli uzmanlar raporsuz yazabilirken, bu uzmanların raporuyla tüm hekimler yazabilir.",
+    "kuralYapisi": "CIFTE_KOSUL",
+    "kosul_1_Raporsuz": {
+     "raporTuru": "Yok (Raporsuz)",
+     "receteDuzenleyenHekimler": {
+      "branslar": [
+       "Nöroloji",
+       "Geriatri",
+       "Psikiyatri"
+      ],
+      "kural": "SADECE_BU"
+     }
+    },
+    "kosul_2_Raporlu": {
+     "raporTuru": "Uzman Hekim Raporu",
+     "raporDuzenleyenHekimler": {
+      "branslar": [
+       "Nöroloji",
+       "Geriatri",
+       "Psikiyatri"
+      ],
+      "kural": "SADECE_BU"
+     },
+     "receteDuzenleyenHekimler": {
+      "branslar": [
+       "TÜM_HEKİMLER"
+      ],
+      "kural": "TÜMÜ"
+     }
+    }
+   }
+  },
+  {
+   "input": "Kollajen etken maddesinin dekübitis yaralarında ödenmesi için gereken sağlık kurulu raporu hangi branşlardan en az kaç hekim içermelidir?",
+   "output": {
+    "kuralId": "EK4F.Madde36",
+    "kaynakBelge": "EK-4/F",
+    "etkenMadde": "Kollajen",
+    "endikasyon": "Dekübitis yaraları (Yalnızca Grade 1-2)",
+    "kosullar": [
+     {
+      "tip": "HASTA_DURUMU",
+      "aciklama": "Cerrahi yapılamayacak durumda olan hastalar (ileri derecede kronik rahatsızlığı olan VEYA anestezi açısından risk grubu ASA 3 ve üzerinde olan hastalar)"
+     },
+     {
+      "tip": "TEDAVI_SURESI_KISITI",
+      "aciklama": "Aynı yara için en çok bir kez 3 hafta süre ile"
+     }
+    ],
+    "gereklilikler": {
+     "raporTuru": "Sağlık Kurulu Raporu",
+     "raporSuresi": "3 Ay",
+     "raporDuzenleyenHekimler": {
+      "branslar": [
+       "Genel Cerrahi",
+       "Plastik Cerrahi",
+       "Cildiye",
+       "Geriatri",
+       "Ortopedi"
+      ],
+      "kural": "EN_AZ_IKISININ_BULUNDUGU"
+     },
+     "receteDuzenleyenHekimler": {
+      "branslar": [
+       "Genel Cerrahi",
+       "Plastik Cerrahi",
+       "Cildiye",
+       "Geriatri",
+       "Ortopedi"
+      ],
+      "kural": "RAPORU_DUZENLEYEN_BRANSLAR"
+     },
+     "dozKisitlamasi": "Birer aylık dozda reçetelenir."
+    }
+   }
+  },
+  {
+   "input": "Deferasiroks etken maddeli ilaçlar hangi yaşta başlanır ve hangi laboratuvar sonuçlarına göre tedavi sonlandırılır?",
+   "output": {
+    "kuralId": "EK4F.Madde47",
+    "kaynakBelge": "EK-4/F",
+    "etkenMadde": "Deferasiroks",
+    "kosullar": [
+     {
+      "tip": "YAS_GRUP",
+      "aciklama": "Suda dağılabilen tablet formları 2 yaş ve üzeri, tablet formları 5 yaş üzeri"
+     },
+     {
+      "tip": "HASTA_DURUMU",
+      "aciklama": "Organ hasarı oluşan ya da organ hasarı riski bulunan hastalar (raporda belirtilmeli)"
+     }
+    ],
+    "gereklilikler": {
+     "raporTuru": "Sağlık Kurulu Raporu",
+     "raporDuzenleyenHekimler": {
+      "branslar": [
+       "Hematoloji"
+      ],
+      "kural": "EN_AZ_BIRININ_YER_ALDIGI"
+     },
+     "receteDuzenleyenHekimler": {
+      "branslar": [
+       "Hematoloji",
+       "Çocuk Sağlığı ve Hastalıkları",
+       "İç Hastalıkları"
+      ],
+      "kural": "EN_AZ_BIRI"
+     }
+    },
+    "tedaviSonlandirmaKriteri": "Tedavi altında iken karaciğer demir konsantrasyonu < 3 mg/g kuru ağırlık VEYA serum ferritin < 300 mikrogram/L olduğunda tedavi sonlandırılır."
+   }
+  },
+  {
+   "input": "Sodyum Oksibat'ın narkolepsi tedavisinde ödenmesi için hangi tanı testleri ve öncül tedavi başarısızlığı gerekir?",
+   "output": {
+    "kuralId": "EK4F.Madde63",
+    "kaynakBelge": "EK-4/F",
+    "etkenMadde": "Sodyum Oksibat",
+    "endikasyon": "Katapleksili veya Katapleksisiz Narkolepsi",
+    "kosullar": [
+     {
+      "tip": "TANI_DOGRULAMA_1",
+      "aciklama": "Polisomnografi VE MSLT (çoklu uyku latens testi) testlerinin her ikisi ile de tanı alan"
+     },
+     {
+      "tip": "TANI_DOGRULAMA_2",
+      "aciklama": "Obstruktif uyku apnesi olmadığı polisomnografi ile gösterilmiş"
+     },
+     {
+      "tip": "YAS_GRUP",
+      "aciklama": "18 yaş üzerindeki hastalar"
+     },
+     {
+      "tip": "ONCEKI_TEDAVI_YANITSIZLIGI",
+      "aciklama": "Modafinil VEYA Metil fenidat kullanılan ve yanıt alınamayan hastalarda kullanılır."
+     },
+     {
+      "tip": "HASTANE_TIPI",
+      "aciklama": "Rapor ve reçete sadece Üniversite ve eğitim-araştırma hastanelerinde düzenlenebilir."
+     }
+    ],
+    "gereklilikler": {
+     "raporTuru": "Sağlık Kurulu Raporu",
+     "raporSuresi": "3 Ay",
+     "raporDuzenleyenHekimler": {
+      "branslar": [
+       "Nöroloji"
+      ],
+      "kural": "EN_AZ_BIRININ_YER_ALDIGI"
+     },
+     "receteDuzenleyenHekimler": {
+      "branslar": [
+       "Nöroloji"
+      ],
+      "kural": "SADECE_BU"
+     }
+    }
+   }
+  },
+  {
+   "input": "Gingko glikozidleri hangi endikasyonlarda, hangi yaş grubunda ve hangi uzmanların raporuyla ödenir?",
+   "output": {
+    "kuralId": "EK4F.Madde55",
+    "kaynakBelge": "EK-4/F",
+    "etkenMadde": "Gingko glikozidleri",
+    "endikasyon": "Yalnızca Alzheimer tipi demans, Vasküler demans ve Miks formlarındaki demans sendromları",
+    "kosullar": [
+     {
+      "tip": "YAS_GRUP",
+      "aciklama": "65 yaş ve üzeri hastalar"
+     }
+    ],
+    "gereklilikler": {
+     "raporTuru": "Uzman Hekim Raporu",
+     "raporSuresi": "1 Yıl",
+     "raporDuzenleyenHekimler": {
+      "branslar": [
+       "Nöroloji",
+       "Geriatri"
+      ],
+      "kural": "EN_AZ_BIRI"
+     },
+     "receteDuzenleyenHekimler": {
+      "branslar": [
+       "TÜM_UZMAN_HEKİMLER"
+      ],
+      "kural": "TÜMÜ"
+     }
+    }
+   }
+  },
+  {
+   "input": "Linezolid (antibiyotik) kullanımı için EK-4/E'ye göre hangi rapor gereklidir ve maksimum tedavi süresi nedir?",
+   "output": {
+    "kuralId": "EK4E.Kural.Linezolid",
+    "kaynakBelge": "EK-4/E (Sistemik Antimikrobik Kuralları)",
+    "etkenMadde": "Linezolid",
+    "endikasyon": "Vankomisine dirençli (VRE) enfeksiyonlar veya diğer çoklu dirençli gram-pozitif enfeksiyonlar",
+    "kosullar": [
+     {
+      "tip": "HASTANE_TIPI",
+      "aciklama": "Rapor sadece Üniversite veya Eğitim ve Araştırma Hastanelerinde düzenlenebilir"
+     }
+    ],
+    "gereklilikler": {
+     "raporTuru": "Sağlık Kurulu Raporu",
+     "raporDuzenleyenHekimler": {
+      "branslar": [
+       "Enfeksiyon Hastalıkları"
+      ],
+      "kural": "EN_AZ_BIRININ_YER_ALDIGI"
+     },
+     "receteDuzenleyenHekimler": {
+      "branslar": [
+       "TÜM_HEKİMLER"
+      ],
+      "kural": "TÜMÜ"
+     },
+     "dozKisitlamasi": "Tedavi süresi raporda belirtilmeli ve maksimum 28 gündür."
+    }
+   }
+  },
+  {
+   "input": "Fenilketonüri (PKU) tanılı hastalar için tıbbi mama (diyet ürünü) ödeme koşulları nedir?",
+   "output": {
+    "kuralId": "EK4B.PKU.Kural",
+    "kaynakBelge": "EK-4/B (Tıbbi Mamalar Listesi)",
+    "urunTipi": "Doğuştan Metabolik Hastalıklar Diyet Ürünleri",
+    "endikasyon": "Fenilketonüri (PKU)",
+    "kosullar": [
+     {
+      "tip": "DOZ_KISITLAMASI",
+      "aciklama": "Yaş grubuna uygun olarak aylık ödenecek maksimum miktar tabloda belirtilen kutu sayısıdır."
+     }
+    ],
+    "gereklilikler": {
+     "raporTuru": "Uzman Hekim Raporu",
+     "raporDuzenleyenHekimler": {
+      "branslar": [
+       "Çocuk Metabolizma Hastalıkları",
+       "Metabolizma Hastalıkları"
+      ],
+      "kural": "EN_AZ_BIRI"
+     },
+     "receteDuzenleyenHekimler": {
+      "branslar": [
+       "Çocuk Metabolizma Hastalıkları",
+       "Metabolizma Hastalıkları",
+       "Çocuk Sağlığı ve Hastalıkları",
+       "İç Hastalıkları"
+      ],
+      "kural": "EN_AZ_BIRI"
+     }
+    }
+   }
+  },
+  {
+   "input": "Budesonid İnhaler Süspansiyon (EK-4/G listesinden) ayaktan tedavide ödenir mi?",
+   "output": {
+    "kuralId": "EK4G.Kural.BudesonidInhaler",
+    "kaynakBelge": "EK-4/G (Sadece Yatarak Tedavilerde Kullanımı Halinde Bedelleri Ödenecek İlaçlar Listesi)",
+    "etkenMadde": "Budesonid İnhaler Süspansiyon",
+    "kullanimAlani": "Yatan Tedavi",
+    "endikasyon": "Kronik obstrüktif akciğer hastalığı (KOAH) veya ağır astım akut atakları",
+    "kosullar": [
+     {
+      "tip": "KULLANIM_KISITI",
+      "aciklama": "Bu ilaç SADECE yatarak tedavilerde (hastane yatışında) bu tanılarla kullanılırsa bedeli ödenir."
+     }
+    ],
+    "gereklilikler": {
+     "sonuc": "Ayaktan tedavide (poliklinik reçetesi) ÖDENMEZ."
+    }
+   }
+  },
+  {
+   "input": "Aprepitant etken maddesinin (kanser hastalarında bulantı/kusma için) ödenme koşulları nedir ve raporu kimler düzenlemelidir?",
+   "output": {
+    "kuralId": "EK4F.Madde24",
+    "kaynakBelge": "EK-4/F",
+    "etkenMadde": "Aprepitant",
+    "endikasyon": "Yüksek ve orta derecede emetojenik kanser kemoterapisi ile ilişkili bulantı ve kusmanın önlenmesi VEYA Kök hücre destekli yüksek doz kemoterapi sonrası emezis VEYA Antrasiklin ve siklofosfamid kombinasyon kemoterapisi ile ilişkili bulantı/kusma",
+    "kosullar": [
+     {
+      "tip": "HASTA_DURUMU",
+      "aciklama": "Yetişkin hastalarda, bu durumların sağlık kurulu raporunda belirtilmesi"
+     }
+    ],
+    "gereklilikler": {
+     "raporTuru": "Sağlık Kurulu Raporu",
+     "raporDuzenleyenHekimler": {
+      "branslar": [
+       "İlgili Uzman Hekimler (örn: Tıbbi Onkoloji, Hematoloji)"
+      ],
+      "kural": "İLGİLİ BRANŞ"
+     }
+    },
+    "dozKisitlamasi": "Bir kür süresince en fazla 1 kutu reçete edilebilir.",
+    "kombinasyonYalagi": "Fosaprepitant dimeglumin ile birlikte kullanılmaz."
+   }
+  },
+  {
+   "input": "Solifenasin, Tolterodine-L, Trospiyum gibi (aşırı aktif mesane) ilaçlarının ödeme kuralındaki 'öncül tedavi' şartı nedir?",
+   "output": {
+    "kuralId": "EK4F.Madde45",
+    "kaynakBelge": "EK-4/F",
+    "etkenMadde": [
+     "Solifenasin",
+     "Tolterodine-L",
+     "Trospiyum",
+     "Darifenasin",
+     "Propiverin",
+     "Fesoterodin",
+     "Mirabegron",
+     "Transdermal Oksibutinin"
+    ],
+    "endikasyon": "Aşırı aktif mesane / Üriner inkontinans",
+    "kosullar": [
+     {
+      "tip": "ONCEKI_TEDAVI_YANITSIZLIGI",
+      "aciklama": "Oral oksibutinine yanıt alınamayan ya da tolere edemeyen hastalarda"
+     }
+    ],
+    "gereklilikler": {
+     "raporTuru": "Uzman Hekim Raporu",
+     "raporDuzenleyenHekimler": {
+      "branslar": [
+       "Nöroloji",
+       "Fizik Tedavi ve Rehabilitasyon",
+       "Üroloji",
+       "Çocuk Sağlığı ve Hastalıkları",
+       "Kadın Hastalıkları ve Doğum"
+      ],
+      "kural": "EN_AZ_BIRI"
+     },
+     "receteDuzenleyenHekimler": {
+      "branslar": [
+       "TÜM_UZMAN_HEKİMLER"
+      ],
+      "kural": "TÜMÜ"
+     }
+    },
+    "kombinasyonYalagi": "Solifenasin, tolterodine-L, trospiyum, darifenasin, propiverin, fesoterodin, transdermal oksibutinin ve oral oksibutinin etken maddeli ilaçların kombine kullanılması halinde Kurumca bedelleri karşılanmaz."
+   }
+  },
+  {
+   "input": "Diyabet hastalarının kullandığı İnsülin preparatları hasta katılım payından muaf mıdır?",
+   "output": {
+    "kuralId": "EK4D.Kural.Insulin",
+    "kaynakBelge": "EK-4/D (Hasta Katılım Payından Muaf İlaçlar Listesi)",
+    "etkenMaddeGrubu": "İnsülin ve Analogları",
+    "hastalikGrubu": "Diyabet (E10-E14)",
+    "aciklama": "Diyabet tedavisinde kullanılan insülin preparatları, kronik hastalıklar listesinde yer alır.",
+    "kosullar": [
+     {
+      "tip": "RAPOR_KOSULU",
+      "aciklama": "Hastanın diyabet tanısını içeren geçerli bir sağlık raporuna (uzman hekim veya sağlık kurulu) istinaden reçete edilmesi."
+     }
+    ],
+    "gereklilikler": {
+     "sonuc": "Hasta Katılım Payından MUAFTIR."
+    }
+   }
+  },
+  {
+   "input": "Kistik Fibrozis tanılı bir hasta için dornaz alfa (Pulmozyme) ayaktan tedavide (poliklinik) reçete edilirse ödenir mi?",
+   "output": {
+    "kuralId": "Kural.Kesisim.EK4G.EK4F",
+    "kaynakBelge": "EK-4/G (Sadece Yatarak Tedavi) ve EK-4/F (Ayakta Raporlu)",
+    "etkenMadde": "Dornaz alfa",
+    "sorgulananDurum": "Ayaktan Tedavi (Poliklinik)",
+    "analiz": [
+     {
+      "belge": "EK-4/G",
+      "kural": "Dornaz alfa, 'Sadece Yatarak Tedavilerde Kullanımı Halinde Bedelleri Ödenecek İlaçlar Listesi'nde yer almaktadır."
+     },
+     {
+      "belge": "EK-4/F",
+      "kural": "Dornaz alfa (Madde 38), '3. basamak sağlık hizmeti sunucularınca düzenlenen sağlık kurulu raporuna dayanılarak tüm hekimlerce' reçetelenebilir (Bu kural ilacın raporlu olduğunu belirtir, ancak EK-4/G kısıtlamasını kaldırmaz)."
+     }
+    ],
+    "gereklilikler": {
+     "sonuc": "ÖDENMEZ.",
+     "aciklama": "Dornaz alfa, EK-4/G listesinde yer aldığı için, ayaktan tedavide (poliklinik reçetesi) raporu olsa dahi bedeli Kurumca karşılanmaz. Sadece hastanede yatış süresince Kistik Fibrozis tanısıyla kullanılabilir."
+    }
+   }
+  },
+  {
+   "input": "Armodafinil (Nuvigil) etken maddesi hangi endikasyonlarda ve raporla ödenir? Modafinil ile farkı nedir?",
+   "output": {
+    "kuralId": "EK4F.Madde72",
+    "kaynakBelge": "EK-4/F",
+    "etkenMadde": "Armodafinil",
+    "endikasyonlar": [
+     {
+      "tani": "Narkolepsi",
+      "kosul": "Yetişkin hastalarda tedaviye başlanılması."
+     },
+     {
+      "tani": "Obstrüktif Uyku Apnesi (Gündüz aşırı uykululuk hali devam eden)",
+      "kosul": "En az 3 ay süreyle PAP tedavisi almasına rağmen (haftada en az 5 gece ve gecede 4 saat ve üzeri efektif) gündüz aşırı uykululuk hali devam eden yetişkin hastalar."
+     }
+    ],
+    "gereklilikler": {
+     "raporTuru": "Uzman Hekim Raporu",
+     "raporSuresi": "1 Yıl",
+     "raporDuzenleyenHekimler": {
+      "branslar": [
+       "Göğüs Hastalıkları",
+       "Nöroloji",
+       "Psikiyatri"
+      ],
+      "kural": "EN_AZ_BIRI"
+     },
+     "receteDuzenleyenHekimler": {
+      "branslar": [
+       "TÜM_HEKİMLER"
+      ],
+      "kural": "TÜMÜ"
+     }
+    },
+    "ekBilgi": "Modafinil (Madde 72.1) ise SADECE 'Narkolepsi' tanısı almış hastalarda aynı rapor koşullarıyla ödenir; obstrüktif uyku apnesi endikasyonunda ödenmez."
+   }
+  },
+  {
+   "input": "SUT Ana Metnine göre, bir ilacın 'endikasyon dışı' kullanımı için hangi onay gereklidir?",
+   "output": {
+    "kuralId": "SUT.Genel.EndikasyonDisi",
+    "kaynakBelge": "SUT Ana Metni (Genel Hükümler)",
+    "aciklama": "Bir ilacın Sağlık Bakanlığı'nca onaylı endikasyonu dışında kullanımı kuralı.",
+    "kosullar": [
+     {
+      "tip": "KULLANIM_SEKLI",
+      "aciklama": "İlacın ruhsatlı endikasyonları veya prospektüs dozu dışında kullanılması"
+     }
+    ],
+    "gereklilikler": {
+     "onayMercii": "Sağlık Bakanlığı (Türkiye İlaç ve Tıbbi Cihaz Kurumu - TİTCK)",
+     "sonuc": "Sağlık Bakanlığı tarafından 'endikasyon dışı kullanım onayı' verilmesi ve bu onayın reçete/raporda belirtilmesi halinde bedeli Kurumca karşılanır.",
+     "istisna": "Sağlık Bakanlığı'nın yayımladığı 'Endikasyon Dışı İlaç Kullanım Kılavuzu'nda yer alan ve Kurumca kabul edilen durumlarda bu onay aranmayabilir."
+    }
+   }
+  },
+  {
+   "input": "Türkiye'de ruhsatlı olmayan ve EK-4/C listesinde yer alan bir yurt dışı ilacın temin ve ödeme süreci nedir?",
+   "output": {
+    "kuralId": "EK4C.GenelKural",
+    "kaynakBelge": "EK-4/C (Yurt Dışı İlaç Fiyat Listesi) ve SUT Ana Metni",
+    "aciklama": "Yurt Dışı İlaç Temin Kuralı",
+    "kosullar": [
+     {
+      "tip": "ILAC_DURUMU",
+      "aciklama": "İlacın Türkiye'de ruhsatlı olmaması VEYA ruhsatlı olup piyasada bulunamaması"
+     },
+     {
+      "tip": "ONAY_KOSULU",
+      "aciklama": "Sağlık Bakanlığı (TİTCK) tarafından 'yurt dışı ilaç kullanım onayı' verilmesi"
+     }
+    ],
+    "gereklilikler": {
+     "teminYolu": "Sağlık Bakanlığı'nca izin verilen kurumlar (Genellikle Türk Eczacıları Birliği - TEB veya Sosyal Güvenlik Kurumu'nun kendisi) aracılığıyla temin edilir.",
+     "odeme": "İlgili ilacın EK-4/C listesindeki referans fiyatı üzerinden Kurumca bedeli karşılanır.",
+     "rapor": "Genellikle bu ilaçlar için spesifik bir Sağlık Kurulu Raporu gereklidir."
+    }
+   }
+  },
+  {
+   "input": "İntratekal baklofen (test dozu dahil) tedavisi hangi rapor koşullarıyla ve hangi hastalarda ödenir?",
+   "output": {
+    "kuralId": "EK4F.Madde78",
+    "kaynakBelge": "EK-4/F",
+    "etkenMadde": "İntratekal baklofen ve test dozu",
+    "endikasyon": "Spinal veya serebral orijinli şiddetli kronik spastisite",
+    "kosullar": [
+     {
+      "tip": "YAS_GRUP",
+      "aciklama": "4 yaş üzeri hastalar"
+     },
+     {
+      "tip": "ONCEKI_TEDAVI_YANITSIZLIGI",
+      "aciklama": "Oral baklofen veya diğer oral antispastik ajanların etkili oral dozları uygulandığında yanıt vermeyen VE/VEYA etkili oral dozlarda kabul edilemez yan etkiler yaşayan"
+     },
+     {
+      "tip": "TANI_DOGRULAMA",
+      "aciklama": "Düşük doz baklofen ampul (0.05mg/ml) intratekal test dozu uygulamasına pozitif yanıt vermiş hastalarda intratekal infüzyon tedavisine başlanır."
+     },
+     {
+      "tip": "HASTANE_TIPI",
+      "aciklama": "Üçüncü basamak resmi sağlık hizmet sunucuları"
+     }
+    ],
+    "gereklilikler": {
+     "raporTuru": "Sağlık Kurulu Raporu",
+     "raporDuzenleyenHekimler": {
+      "branslar": [
+       "Beyin Cerrahi",
+       "Nöroloji",
+       "Fizik Tedavi ve Rehabilitasyon"
+      ],
+      "kural": "EN_AZ_UCUNUN_YER_ALDIGI"
+     },
+     "receteDuzenleyenHekimler": {
+      "branslar": [
+       "Beyin Cerrahi",
+       "Nöroloji",
+       "Fizik Tedavi ve Rehabilitasyon"
+      ],
+      "kural": "EN_AZ_BIRI"
+     }
+    }
+   }
+  },
+  {
+   "input": "Adrenalin oto enjektör formlarının ödenme kuralı nedir? Yılda 4 enjektörden fazla kullanımda kural değişir mi?",
+   "output": {
+    "kuralId": "EK4F.Madde67",
+    "kaynakBelge": "EK-4/F",
+    "etkenMadde": "Adrenalin oto enjektör formları",
+    "kural_1_StandartKullanim": {
+     "aciklama": "İlk 4 enjektör için (1 yıl içinde)",
+     "gereklilikler": {
+      "raporTuru": "Uzman Hekim Raporu",
+      "raporDuzenleyenHekimler": {
+       "branslar": [
+        "İmmünoloji",
+        "Alerji",
+        "İmmünoloji ve Alerji Hastalıkları",
+        "Çocuk Sağlığı ve Hastalıkları",
+        "Dermatoloji"
+       ],
+       "kural": "EN_AZ_BIRI"
+      },
+      "receteDuzenleyenHekimler": {
+       "branslar": [
+        "TÜM_UZMAN_HEKİMLER"
+       ],
+       "kural": "TÜMÜ"
+      }
+     }
+    },
+    "kural_2_IleriKullanim": {
+     "aciklama": "1 yıl içinde toplam 4 enjektörden FAZLA kullanılması durumunda",
+     "kosullar": [
+      {
+       "tip": "KULLANIM_SIKLIGI",
+       "aciklama": "1 yıl içinde toplam 4 enjektörden fazla kullanım"
+      }
+     ],
+     "gereklilikler": {
+      "raporTuru": "Uzman Hekim Raporu",
+      "raporDuzenleyenHekimler": {
+       "branslar": [
+        "İmmünoloji",
+        "Alerji",
+        "İmmünoloji ve Alerji Hastalıkları"
+       ],
+       "kural": "SADECE_BU"
+      },
+      "receteDuzenleyenHekimler": {
+       "branslar": [
+        "İmmünoloji",
+        "Alerji",
+        "İmmünoloji ve Alerji Hastalıkları"
+       ],
+       "kural": "SADECE_BU"
+      }
+     }
+    }
+   }
+  },
+  {
+   "input": "Kanser tedavisinde (Malign Neoplazmlar C00-C97) kullanılan ilaçlar hasta katılım payından muaf mıdır?",
+   "output": {
+    "kuralId": "EK4D.Kural.Kanser",
+    "kaynakBelge": "EK-4/D (Hasta Katılım Payından Muaf İlaçlar Listesi)",
+    "etkenMaddeGrubu": "Antineoplastik İlaçlar ve İmmünomodülatörler (L01, L02, L03, L04)",
+    "hastalikGrubu": "Malign Neoplazmlar (C00-C97)",
+    "kosullar": [
+     {
+      "tip": "RAPOR_KOSULU",
+      "aciklama": "Hastanın ilgili malignite tanısını içeren (örn: EK-4/F'ye uygun) geçerli bir sağlık kurulu/uzman hekim raporuna istinaden reçete edilmesi."
+     }
+    ],
+    "gereklilikler": {
+     "sonuc": "Hasta Katılım Payından MUAFTIR."
+    }
+   }
+  },
+  {
+   "input": "Ketojenik tıbbi mama hangi tip epilepsi hastalarında ve hangi koşullarda ödenir?",
+   "output": {
+    "kuralId": "EK4F.Madde61",
+    "kaynakBelge": "EK-4/F (ve EK-4/B ile ilişkilidir)",
+    "urunTipi": "Ketojenik tıbbi mama",
+    "endikasyon_1": "Dirençli Epilepsi",
+    "kosul_1": {
+     "tip": "ONCEKI_TEDAVI_YANITSIZLIGI",
+     "aciklama": "Üç ve üzerinde antiepileptik tedavi uygun doz ve süre kullanılmış olmasına rağmen cevap alınamayan"
+    },
+    "endikasyon_2": "Metabolik Hastalıklar (E74.0, E74.4, E74.9)",
+    "kosul_2": {
+     "tip": "TANI_KISITI",
+     "aciklama": "E74.0 (kalp ve/veya kas tutulumu olanlar), E74.4 (privuat dehidrogenaz eksikliği olanlar), E74.9 (sadece GLUT 1 eksikliği olanlar)"
+    },
+    "gereklilikler": {
+     "raporTuru": "Uzman Hekim Raporu",
+     "raporSuresi": "6 Ay",
+     "raporDuzenleyenHekimler": {
+      "branslar": [
+       "Çocuk Nöroloji",
+       "Metabolizma Hastalıkları",
+       "Çocuk Metabolizma Hastalıkları",
+       "Çocuk Endokrin ve Metabolizma"
+      ],
+      "kural": "İlgili endikasyona göre EN_AZ_BIRI"
+     },
+     "receteDuzenleyenHekimler": {
+      "branslar": [
+       "Çocuk Nöroloji",
+       "Metabolizma Hastalıkları",
+       "Çocuk Metabolizma Hastalıkları",
+       "Çocuk Endokrin ve Metabolizma",
+       "Çocuk Sağlığı ve Hastalıkları"
+      ],
+      "kural": "EN_AZ_BIRI"
+     },
+     "dozKisitlamasi": "Raporda doz, hastanın kalori/kg hesabına göre düzenlenir."
+    }
+   }
+  },
+  {
+   "input": "Monobenzon etken maddesinin vitiligo tedavisinde ödenme koşulları, maksimum süre ve kutu limiti nedir?",
+   "output": {
+    "kuralId": "EK4F.Madde81",
+    "kaynakBelge": "EK-4/F",
+    "etkenMadde": "Monobenzon",
+    "endikasyon": "Yaygın (vücut yüzey alanının yüzde 50’sinden daha fazlası), repigmentasyon tedavilerine dirençli vitiligo",
+    "kosullar": [
+     {
+      "tip": "HASTANE_TIPI",
+      "aciklama": "Üçüncü basamak sağlık hizmeti sunucuları"
+     },
+     {
+      "tip": "TANI_DISLAMASI",
+      "aciklama": "Çillenme, fotosensitizasyon, gebelik melazması (kloazma) veya postinflamatuvar hiperpigmentasyon tedavilerinde ödenmez."
+     }
+    ],
+    "gereklilikler": {
+     "raporTuru": "Sağlık Kurulu Raporu (Başlangıç)",
+     "raporSuresi": "En fazla 3 ay",
+     "raporDuzenleyenHekimler": {
+      "branslar": [
+       "Dermatoloji"
+      ],
+      "kural": "EN_AZ_BIRININ_YER_ALDIGI"
+     },
+     "receteDuzenleyenHekimler": {
+      "branslar": [
+       "Dermatoloji"
+      ],
+      "kural": "SADECE_BU"
+     }
+    },
+    "tedaviDevamKurali": "3. ayın sonunda yanıt değerlendirmesi yapılır, yanıt alınamazsa tedavi sonlandırılır. Yanıt alınırsa en fazla 3’er ay süreli yeni SKR düzenlenir.",
+    "dozKisitlamasi": "Maksimum tedavi süresi 12 ay VE bu süre boyunca en fazla kullanılabilecek ilaç kutu adedi 4’tür."
+   }
+  },
+  {
+   "input": "Pentosan polisülfat sodyum (interstisyel sistit ilacı) için SUT ödeme koşulları nedir? Tedavinin başlangıç, devam ve 6. ay sonrası süreçleri nasıldır?",
+   "output": {
+    "kuralId": "EK4F.Madde69",
+    "kaynakBelge": "EK-4/F",
+    "etkenMadde": "Pentosan polisülfat sodyum",
+    "endikasyon": "İnterstisyel sistite bağlı ağrılı mesane ve kronik ağrılı işeme semptomları",
+    "kosullar": [
+     {
+      "tip": "TANI_DOGRULAMA_1",
+      "aciklama": "Sistoskopik olarak mesanede glomerülasyon bulgusunun gösterildiği"
+     },
+     {
+      "tip": "TANI_DOGRULAMA_2",
+      "aciklama": "İdrar kültürü negatif olan hastalar"
+     }
+    ],
+    "kural_1_Baslangic": {
+     "aciklama": "Tedaviye başlama (İlk 3 Ay)",
+     "gereklilikler": {
+      "raporTuru": "Uzman Hekim Raporu",
+      "raporSuresi": "3 Ay",
+      "raporDuzenleyenHekimler": {
+       "branslar": [
+        "Üroloji"
+       ],
+       "kural": "SADECE_BU"
+      }
+     }
+    },
+    "kural_2_Devam_3_6_Ay": {
+     "aciklama": "Tedaviye devam (3. aydan 6. aya kadar)",
+     "kosullar": [
+      {
+       "tip": "TEDAVI_YANITI",
+       "aciklama": "Tedaviye başlandıktan 3 ay sonra üroloji uzmanı tarafından tedaviye yanıt alındığının VE tedaviyi kesmeyi gerektirecek yan etkilerin ortaya çıkmadığının raporda belirtilmesi koşulu ile 3 ay daha tedaviye devam edilir."
+      }
+     ]
+    },
+    "kural_3_Sonlandirma": {
+     "aciklama": "Tedaviyi kesme kriteri",
+     "kosullar": [
+      {
+       "tip": "TEDAVI_YANITSIZLIGI",
+       "aciklama": "Tedaviye yanıt alınamayan hastalarda 6. ayın sonunda tedavi kesilir."
+      }
+     ]
+    },
+    "kural_4_Devam_6_Ay_Sonrasi": {
+     "aciklama": "Tedaviden fayda gören hastalarda devam",
+     "gereklilikler": {
+      "raporTuru": "Uzman Hekim Raporu",
+      "raporSuresi": "6 Ay (Yenileme)",
+      "raporDuzenleyenHekimler": {
+       "branslar": [
+        "Üroloji"
+       ],
+       "kural": "SADECE_BU"
+      },
+      "receteDuzenleyenHekimler": {
+       "branslar": [
+        "Üroloji"
+       ],
+       "kural": "SADECE_BU"
+      }
+     }
+    }
+   }
+  },
+  {
+   "input": "Levonerjestrel etkin maddeli ürünlerin (normalde kontraseptif) anormal uterin kanamalarda ödenmesi için hangi spesifik tetkiklerin yapılması ve raporlanması gerekir?",
+   "output": {
+    "kuralId": "EK4F.Madde10.Kontraseptifler.AltKural",
+    "kaynakBelge": "EK-4/F",
+    "etkenMadde": "Levonerjestrel (Kontraseptifler)",
+    "endikasyon": "Anormal uterin kanamalar (Kontrasepsiyon dışındaki tedavi endikasyonları)",
+    "kosullar": [
+     {
+      "tip": "TANI_DOGRULAMA_GEREKLILIGI",
+      "aciklama": "Intrauterin organik patolojilerin ekartasyonu için"
+     },
+     {
+      "tip": "GEREKLI_TETKIKLER",
+      "aciklama": "Transvajinal ultrasonografi VEYA endometriyal biyopsi VEYA ofis histeroskopi YA DA Salin İnfüzyon Sonografisi (SİS) yapılması (raporda belirtilmeli)"
+     }
+    ],
+    "gereklilikler": {
+     "raporTuru": "Sağlık Raporu (Uzman Hekim Raporu)",
+     "raporDuzenleyenHekimler": {
+      "branslar": [
+       "Kadın Hastalıkları ve Doğum"
+      ],
+      "kural": "SADECE_BU"
+     },
+     "receteDuzenleyenHekimler_Uygulayan": {
+      "branslar": [
+       "Kadın Hastalıkları ve Doğum"
+      ],
+      "kural": "SADECE_BU"
+     }
+    }
+   }
+  },
+  {
+   "input": "İnsan C proteini konsantresi hangi durumlarda ve hangi doz kısıtlamasıyla ödenir?",
+   "output": {
+    "kuralId": "EK4F.Madde83",
+    "kaynakBelge": "EK-4/F",
+    "etkenMadde": "İnsan C proteini konsantresi",
+    "endikasyon_A": "Ağır konjenital protein C eksikliği bulunan hastalarda ortaya çıkan purpura fulminans VE kumarine bağlı deri nekrozunun tedavisi",
+    "endikasyon_B": "Ağır konjenital protein C eksikliği olan hastalardan; yakın zamanda invaziv tedavi ya da cerrahi girişim uygulanacak olanlara, kumarin tedavisi başlanacak olanlara, tek başına kumarin tedavisinin yetersiz kaldığı durumda VEYA kumarin tedavisinin kontrendike olduğu durumlarda kısa süreli profilaksi amaçlı",
+    "gereklilikler": {
+     "raporTuru": "Sağlık Kurulu Raporu",
+     "raporSuresi": "6 Ay",
+     "raporIcerigi": "Hastanın tanısı, protein C düzeyi, hastanın vücut ağırlığı ve ilacın kullanım dozu belirtilmelidir.",
+     "raporDuzenleyenHekimler": {
+      "branslar": [
+       "Hematoloji"
+      ],
+      "kural": "EN_AZ_BIRININ_YER_ALDIGI"
+     },
+     "receteDuzenleyenHekimler": {
+      "branslar": [
+       "Hematoloji",
+       "Çocuk Sağlığı ve Hastalıkları",
+       "İç Hastalıkları"
+      ],
+      "kural": "EN_AZ_BIRI"
+     }
+    },
+    "dozKisitlamasi": "Yalnızca 'Endikasyon B' (profilaksi) için: Bir reçetede en fazla 7 günlük dozda kullanılması halinde bedelleri Kurumca karşılanır."
+   }
+  },
+  {
+   "input": "EK-4/A Teşhis Kısaltmaları listesinin SUT kural motorundaki amacı nedir? 'G30' kodu ne anlama gelir?",
+   "output": {
+    "kuralId": "EK4A_Teshis.GenelKural",
+    "kaynakBelge": "EK-4/A TEŞHİS KISALTMALARI LİSTESİ",
+    "aciklama": "Bu liste, SUT'ta (özellikle EK-4/D ve EK-4/F) atıfta bulunulan teşhisler ile uluslararası ICD-10 kodları arasında bir eşleştirme (mapping) sağlar.",
+    "islevi": "Raporların ve reçetelerin, ilacın ödenmesi için gereken spesifik tanı koşulunu (örn: 'Demans') karşılayıp karşılamadığını doğrulamak için kullanılır.",
+    "ornekEslesme": [
+     {
+      "kisaltma": "Demans",
+      "icd10_kodlari": [
+       "G30",
+       "F00",
+       "F01",
+       "F02",
+       "F03"
+      ]
+     },
+     {
+      "kisaltma": "G30",
+      "anlami": "Alzheimer hastalığı"
+     }
+    ]
+   }
+  },
+  {
+   "input": "Parenteral Vankomisin veya Teikoplanin *yatan hastalarda* (servis/yoğun bakım) kullanılırken rapor gerekir mi? Ayaktan tedaviden farkı nedir?",
+   "output": {
+    "kuralId": "EK4E.Madde10.Kesisim",
+    "kaynakBelge": "EK-4/E (Sistemik Antimikrobik Kuralları)",
+    "etkenMadde": [
+     "Vankomisin (Parenteral)",
+     "Teikoplanin (Parenteral)"
+    ],
+    "kural_1_YatanHasta": {
+     "kullanimAlani": "Yatan Tedavi (Servis veya Yoğun Bakım)",
+     "endikasyon": "Dirençli gram-pozitif bakteri enfeksiyonları (MRSA vb.)",
+     "kosullar": [
+      {
+       "tip": "TANI_DOGRULAMA",
+       "aciklama": "Kültür sonucuna göre veya kültür sonucu beklenmeksizin (kültür alınması koşuluyla) başlanabilir."
+      }
+     ],
+     "gereklilikler": {
+      "raporTuru": "Yok (Raporsuz)",
+      "receteDuzenleyenHekimler": {
+       "branslar": [
+        "Enfeksiyon Hastalıkları",
+        "Çocuk Enfeksiyon Hastalıkları",
+        "İç Hastalıkları",
+        "Çocuk Sağlığı ve Hastalıkları",
+        "Genel Cerrahi",
+        "Göğüs Hastalıkları",
+        "KVC",
+        "Anestezi ve Reanimasyon",
+        "vb. (ilgili uzman hekimler)"
+       ],
+       "kural": "EN_AZ_BIRI"
+      }
+     }
+    },
+    "kural_2_AyaktanHasta": {
+     "kullanimAlani": "Ayaktan Tedavi (Poliklinik)",
+     "gereklilikler": {
+      "raporTuru": "Uzman Hekim Raporu",
+      "raporSuresi": "En fazla 10 gün",
+      "raporDuzenleyenHekimler": {
+       "branslar": [
+        "Enfeksiyon Hastalıkları",
+        "Çocuk Enfeksiyon Hastalıkları"
+       ],
+       "kural": "EN_AZ_BIRI"
+      }
+     }
+    }
+   }
+  },
+  {
+   "input": "Omalizumab'ın 'Kronik İdiyopatik Ürtiker' tanısıyla ödenme koşulları nedir? Başlangıç, devam ve nüks durumlarında raporlama süreci nasıldır?",
+   "output": {
+    "kuralId": "EK4F.Madde49.b",
+    "kaynakBelge": "EK-4/F",
+    "etkenMadde": "Omalizumab",
+    "endikasyon": "Kronik İdiyopatik Ürtiker",
+    "kosullar": [
+     {
+      "tip": "ONCEKI_TEDAVI_YANITSIZLIGI",
+      "aciklama": "Daha önce en az 24 hafta süreyle antihistaminik tedavisi almış ancak yanıt alınamamış"
+     },
+     {
+      "tip": "HASTANE_TIPI",
+      "aciklama": "Rapor sadece Üniversite veya eğitim-araştırma hastanelerinde düzenlenebilir"
+     }
+    ],
+    "kural_1_Baslangic": {
+     "aciklama": "Tedavi Başlangıcı (İlk 12 Hafta)",
+     "gereklilikler": {
+      "raporTuru": "Sağlık Kurulu Raporu",
+      "raporSuresi": "12 Hafta (Maksimum)",
+      "raporDuzenleyenHekimler": {
+       "branslar": [
+        "Dermatoloji",
+        "Alerji",
+        "İmmünoloji",
+        "İmmünoloji ve Alerji Hastalıkları"
+       ],
+       "kural": "EN_AZ_BIRININ_BULUNDUGU"
+      },
+      "receteDuzenleyenHekimler": {
+       "branslar": [
+        "Dermatoloji",
+        "Alerji",
+        "İmmünoloji",
+        "İmmünoloji ve Alerji Hastalıkları"
+       ],
+       "kural": "RAPORU_DUZENLEYEN_BRANSLAR"
+      },
+      "dozKisitlamasi": "4'er haftalık dozlarda"
+     }
+    },
+    "kural_2_Devam": {
+     "aciklama": "Tedavi Devamı (İkinci 12 Hafta)",
+     "kosullar": [
+      {
+       "tip": "TEDAVI_YANITI",
+       "aciklama": "İlk 12 haftalık omalizumab ile tedavi süresi sonunda yanıt alındığının raporda belirtilmesi koşuluyla ikinci 12 hafta tedavi verilebilir. Tedavi süresi 24 haftaya tamamlanarak sonlandırılır."
+      }
+     ]
+    },
+    "kural_3_Nuks": {
+     "aciklama": "Nüks (Tekrar Tedavi)",
+     "kosullar": [
+      {
+       "tip": "HASTA_DURUMU",
+       "aciklama": "Her 6. doz uygulamasından sonra olmak üzere, hekimin belirleyeceği ara verme süresi sonunda nüks ortaya çıkması halinde (raporda belirtilmeli)"
+      },
+      {
+       "tip": "KOSUL_ISTISNASI",
+       "aciklama": "Tekrar antihistaminik tedavisi alma koşulu aranmaksızın"
+      }
+     ],
+     "gereklilikler": {
+      "raporTuru": "Sağlık Kurulu Raporu (Nüks)",
+      "raporSuresi": "24 Hafta",
+      "kural": "Tedavi tekrarlanabilir."
+     }
+    }
+   }
+  },
+  {
+   "input": "Sodyum fenilbütirat etken maddesi hangi üre siklusu bozukluklarında ve hangi raporla ödenir?",
+   "output": {
+    "kuralId": "EK4F.Madde84",
+    "kaynakBelge": "EK-4/F",
+    "etkenMadde": "Sodyum fenilbütirat",
+    "endikasyon": "Karbamilfosfat sentetaz, ornitin transkarbamilaz VEYA argininosüksinat sentetaz eksikliklerini içeren üre siklusu bozukluklarının kronik tedavisinde ek tedavi OLARAK VEYA Yenidoğan başlangıçlı tüm hastaların (tam enzim eksiklikleri) tedavisinde VEYA Hiperamonyemik ensefalopati öyküsü olan geç başlangıçlı hastaların (kısmi enzim eksiklikleri) tedavisinde",
+    "gereklilikler": {
+     "raporTuru": "Uzman Hekim Raporu",
+     "raporSuresi": "6 Ay",
+     "raporDuzenleyenHekimler": {
+      "branslar": [
+       "Çocuk Metabolizma",
+       "Çocuk Endokrin ve Metabolizma"
+      ],
+      "kural": "EN_AZ_BIRI"
+     },
+     "receteDuzenleyenHekimler": {
+      "branslar": [
+       "Çocuk Metabolizma",
+       "Çocuk Endokrin ve Metabolizma"
+      ],
+      "kural": "EN_AZ_BIRI"
+     }
+    }
+   }
+  },
+  {
+   "input": "Multipl Skleroz (G35) tanılı hastaların tedavisinde kullanılan (örn: Beta-interferon, Glatiramer asetat) ilaçlar hasta katılım payından muaf mıdır?",
+   "output": {
+    "kuralId": "EK4D.Kural.MultiplSkleroz",
+    "kaynakBelge": "EK-4/D (Hasta Katılım Payından Muaf İlaçlar Listesi)",
+    "etkenMaddeGrubu": "Multipl Skleroz Tedavisi İlaçları (L03AX, L03AB)",
+    "hastalikGrubu": "Multipl Skleroz (G35)",
+    "aciklama": "Multipl Skleroz, katılım payı muafiyeti listesindeki kronik hastalıklardan biridir.",
+    "kosullar": [
+     {
+      "tip": "RAPOR_KOSULU",
+      "aciklama": "Hastanın G35 tanısını içeren ve SUT'un ilgili maddelerine (örn: Nöroloji uzman hekim raporu) uygun geçerli bir sağlık raporuna istinaden reçete edilmesi."
+     }
+    ],
+    "gereklilikler": {
+     "sonuc": "Hasta Katılım Payından MUAFTIR."
+    }
+   }
+  },
+  {
+   "input": "EK-4/B listesine göre 'Kistik Fibrozis' tanılı hastalar için tıbbi mama (diyet ürünü) ödeme koşulları nedir?",
+   "output": {
+    "kuralId": "EK4B.KistikFibrozis.Kural",
+    "kaynakBelge": "EK-4/B (Tıbbi Mamalar Listesi)",
+    "urunTipi": "Kistik Fibrozis (Enzimler ve Özel Formüller) Diyet Ürünleri",
+    "endikasyon": "Kistik Fibrozis",
+    "kosullar": [
+     {
+      "tip": "DOZ_KISITLAMASI",
+      "aciklama": "Yaş grubuna uygun olarak aylık ödenecek maksimum miktar tabloda belirtilen kutu sayısıdır."
+     }
+    ],
+    "gereklilikler": {
+     "raporTuru": "Uzman Hekim Raporu",
+     "raporDuzenleyenHekimler": {
+      "branslar": [
+       "Çocuk Gastroenteroloji",
+       "Gastroenteroloji",
+       "Çocuk Göğüs Hastalıkları",
+       "Göğüs Hastalıkları"
+      ],
+      "kural": "EN_AZ_BIRI"
+     },
+     "receteDuzenleyenHekimler": {
+      "branslar": [
+       "Çocuk Gastroenteroloji",
+       "Gastroenteroloji",
+       "Çocuk Göğüs Hastalıkları",
+       "Göğüs Hastalıkları",
+       "Çocuk Sağlığı ve Hastalıkları",
+       "İç Hastalıkları"
+      ],
+      "kural": "EN_AZ_BIRI"
+     }
+    }
+   }
+  },
+  {
+   "input": "SUT Ana Metnine göre, 'Uzman Hekim Raporu' ve 'Sağlık Kurulu Raporu' arasındaki temel fark nedir?",
+   "output": {
+    "kuralId": "SUT.Genel.RaporFarki",
+    "kaynakBelge": "SUT Ana Metni (Genel Hükümler)",
+    "kural_1_UzmanHekimRaporu": {
+     "tanim": "Tek bir uzman hekim tarafından düzenlenen rapor.",
+     "kullanim": "SUT'ta 'uzman hekim raporu' olarak belirtilen ve genellikle daha düşük maliyetli veya daha yaygın raporlu ilaçlar için kullanılır."
+    },
+    "kural_2_SaglikKuruluRaporu": {
+     "tanim": "Genellikle farklı branşlardan en az üç uzman hekimin (veya SUT'ta belirtilen spesifik branş kombinasyonlarının) imzasını taşıyan heyet raporu.",
+     "kullanim": "SUT'ta 'sağlık kurulu raporu' (SKR) olarak belirtilen, genellikle daha yüksek maliyetli, özel takip gerektiren (örn: kanser, MS, biyolojik ajanlar) veya kullanımı kısıtlı ilaçlar için kullanılır."
+    }
+   }
+  },
+  {
+   "input": "Rivaroksaban etken maddesinin (elektif kalça ve diz replasmanlarında) DVT profilaksisi için ödenme koşulu ve kutu limiti nedir?",
+   "output": {
+    "kuralId": "EK4F.Madde54",
+    [cite_start]"kaynakBelge": "EK-4/F [cite: 1]",
+    [cite_start]"etkenMadde": "Rivaroksaban [cite: 1]",
+    [cite_start]"endikasyon": "Elektif kalça ve diz total eklem replasmanlarında derin ven trombozunun profilaksisi [cite: 1]",
+    "gereklilikler": {
+     [cite_start]"raporTuru": "Uzman Hekim Raporu (Durumun belirtildiği) [cite: 1]",
+     "raporDuzenleyenHekimler": {
+      "branslar": [
+       "Ortopedi"
+      ],
+      [cite_start]"kural": "SADECE_BU [cite: 1]"
+     }
+    },
+    "dozKisitlamasi": [
+     {
+      "prosedur": "Diz replasmanı",
+      [cite_start]"limit": "En fazla 1 kutu [cite: 1]"
+     },
+     {
+      "prosedur": "Kalça replasmanı",
+      [cite_start]"limit": "En fazla 3 kutu [cite: 1]"
+     }
+    ]
+   }
+  },
+  {
+   "input": "Dabigatran etken maddesinin (elektif kalça ve diz replasmanlarında) DVT profilaksisi için ödenme koşulu ve gün limiti nedir?",
+   "output": {
+    "kuralId": "EK4F.Madde53",
+    [cite_start]"kaynakBelge": "EK-4/F [cite: 1]",
+    [cite_start]"etkenMadde": "Dabigatran [cite: 1]",
+    [cite_start]"endikasyon": "Elektif kalça ve diz total eklem replasmanlarında derin ven trombozunun profilaksisi [cite: 1]",
+    "gereklilikler": {
+     [cite_start]"raporTuru": "Uzman Hekim Raporu (Durumun belirtildiği) [cite: 1]",
+     "raporDuzenleyenHekimler": {
+      "branslar": [
+       "Ortopedi"
+      ],
+      [cite_start]"kural": "SADECE_BU [cite: 1]"
+     }
+    },
+    "dozKisitlamasi": [
+     {
+      "prosedur": "Diz replasmanı",
+      [cite_start]"limit": "En fazla 10 günlük kullanım bedeli ödenir [cite: 1]"
+     },
+     {
+      "prosedur": "Kalça replasmanı",
+      [cite_start]"limit": "En fazla 35 günlük kullanım bedeli ödenir [cite: 1]"
+     }
+    ]
+   }
+  },
+  {
+   "input": "Eplerenon etken maddesinin ödenme koşulları nedir? Hangi durumda (öncül tedavi) ödenir ve hangi endikasyonda kesinlikle ödenmez?",
+   "output": {
+    "kuralId": "EK4F.Madde58",
+    [cite_start]"kaynakBelge": "EK-4/F [cite: 1]",
+    [cite_start]"etkenMadde": "Eplerenon [cite: 1]",
+    "endikasyonlar": [
+     [cite_start]"a) Akut MI sonrası klinik kalp yetmezliği olan sol ventrikül disfonksiyonlu (LVEF ≤ %40) hastalar [cite: 1]",
+     [cite_start]"b) Standart tedaviye ek olarak, kronik kalp yetmezliği (NYHA Sınıf II) ve sol ventrikül sistolik disfonksiyonu (LVEF ≤ %30) olan yetişkin hastalar [cite: 1]"
+    ],
+    "kosullar": [
+     {
+      "tip": "ONCEKI_TEDAVI_YANITSIZLIGI",
+      [cite_start]"aciklama": "Yalnızca spironolakton tedavisi altındayken jinekomasti gelişen VEYA spironolaktonu tolere edemeyen hastalar [cite: 1]"
+     }
+    ],
+    "gereklilikler": {
+     [cite_start]"raporTuru": "Uzman Hekim Raporu [cite: 1]",
+     "raporDuzenleyenHekimler": {
+      "branslar": [
+       "Kardiyoloji"
+      ],
+      [cite_start]"kural": "SADECE_BU [cite: 1]"
+     },
+     "receteDuzenleyenHekimler": {
+      "branslar": [
+       "TÜM_HEKİMLER"
+      ],
+      [cite_start]"kural": "TÜMÜ [cite: 1]"
+     }
+    },
+    [cite_start]"negatifEndikasyon": "Hipertansiyon tedavisinde ödenmez. [cite: 1]"
+   }
+  },
+  {
+   "input": "İdebenon etken maddesi hangi tanılarda ödenir ve hangi tanıda kesinlikle ödenmez?",
+   "output": {
+    "kuralId": "EK4F.Madde59",
+    [cite_start]"kaynakBelge": "EK-4/F [cite: 1]",
+    [cite_start]"etkenMadde": "İdebenon [cite: 1]",
+    [cite_start]"endikasyon": "Fridreich Ataksisi VEYA serebral ataksi [cite: 1]",
+    "gereklilikler": {
+     [cite_start]"raporTuru": "Uzman Hekim Raporu [cite: 1]",
+     "raporDuzenleyenHekimler": {
+      "branslar": [
+       "Nöroloji"
+      ],
+      [cite_start]"kural": "SADECE_BU [cite: 1]"
+     },
+     "receteDuzenleyenHekimler": {
+      "branslar": [
+       "Nöroloji"
+      ],
+      [cite_start]"kural": "SADECE_BU [cite: 1]"
+     }
+    },
+    [cite_start]"negatifEndikasyon": "Demans ve Alzheimer endikasyonunda Kurumca bedeli karşılanmaz. [cite: 1]"
+   }
+  },
+  {
+   "input": "İnsan Alfa-1-Proteinaz inhibitörü tedavisi için gereken genetik ve solunum fonksiyon testi koşulları nelerdir?",
+   "output": {
+    "kuralId": "EK4F.Madde74",
+    [cite_start]"kaynakBelge": "EK-4/F [cite: 1]",
+    [cite_start]"etkenMadde": "İnsan Alfa-1-Proteinaz inhibitörü [cite: 1]",
+    [cite_start]"endikasyon": "Konjenital alfa1-proteinaz inhibitörünün ciddi eksikliği [cite: 1]",
+    "kosullar": [
+     {
+      "tip": "GENETIK_TEST",
+      [cite_start]"aciklama": "Genetik tetkik ile homozigot PiZZ alleli olduğu gösterilen [cite: 1]"
+     },
+     {
+      "tip": "LAB_TEST",
+      [cite_start]"aciklama": "Solunum fonksiyon testi sonucu FEV1 değeri %30’un üzerinde olan hastalar [cite: 1]"
+     }
+    ],
+    "gereklilikler": {
+     [cite_start]"raporTuru": "Sağlık Kurulu Raporu [cite: 1]",
+     [cite_start]"raporSuresi": "1 Yıl [cite: 1]",
+     "raporDuzenleyenHekimler": {
+      "branslar": [
+       "Göğüs Hastalıkları"
+      ],
+      [cite_start]"kural": "UC_HEKIM_IMZALI (Üç göğüs hastalıkları uzman hekimi tarafından düzenlenen) [cite: 1]"
+     },
+     "receteDuzenleyenHekimler": {
+      "branslar": [
+       "Göğüs Hastalıkları"
+      ],
+      [cite_start]"kural": "SADECE_BU [cite: 1]"
+     }
+    }
+   }
+  },
+  {
+   "input": "Suni gözyaşı preparatlarının raporlu ve raporsuz yazılma kuralları nedir?",
+   "output": {
+    "kuralId": "EK4F.Madde28",
+    [cite_start]"kaynakBelge": "EK-4/F [cite: 1]",
+    [cite_start]"etkenMadde": "Suni gözyaşı [cite: 1]",
+    "kuralYapisi": "CIFTE_KOSUL",
+    "kosul_1_Raporsuz": {
+     [cite_start]"raporTuru": "Yok (Raporsuz) [cite: 1]",
+     "receteDuzenleyenHekimler": {
+      "branslar": [
+       "Göz Hastalıkları"
+      ],
+      [cite_start]"kural": "SADECE_BU_UZMAN_HEKIMLER [cite: 1]"
+     }
+    },
+    "kosul_2_Raporlu": {
+     [cite_start]"raporTuru": "Uzman Hekim Raporu [cite: 1]",
+     "raporDuzenleyenHekimler": {
+      "branslar": [
+       "Göz Hastalıkları"
+      ],
+      [cite_start]"kural": "SADECE_BU_UZMAN_HEKIMLER [cite: 1]"
+     },
+     "receteDuzenleyenHekimler": {
+      "branslar": [
+       "TÜM_HEKİMLER"
+      ],
+      [cite_start]"kural": "TÜMÜ [cite: 1]"
+     }
+    }
+   }
+  },
+  {
+   "input": "Tazaroten etken maddesi hangi dermatolojik tanıda ödenir, hangisinde ödenmez?",
+   "output": {
+    "kuralId": "EK4F.Madde76",
+    [cite_start]"kaynakBelge": "EK-4/F [cite: 1]",
+    [cite_start]"etkenMadde": "Tazaroten [cite: 1]",
+    "pozitifEndikasyon": {
+     [cite_start]"tani": "Yalnızca plak psöriazis [cite: 1]",
+     "gereklilikler": {
+      [cite_start]"raporTuru": "Uzman Hekim Raporu [cite: 1]",
+      "raporDuzenleyenHekimler": {
+       "branslar": [
+        "Dermatoloji"
+       ],
+       [cite_start]"kural": "SADECE_BU [cite: 1]"
+      },
+      "receteDuzenleyenHekimler": {
+       "branslar": [
+        "Dermatoloji"
+       ],
+       [cite_start]"kural": "SADECE_BU [cite: 1]"
+      }
+     }
+    },
+    "negatifEndikasyon": {
+     [cite_start]"tani": "Akne vulgaris [cite: 1]",
+     [cite_start]"sonuc": "Akne vulgaris tedavisinde reçete edilmesi halinde bedelleri Kurumca karşılanmaz. [cite:1]"
+    }
+   }
+  },
+  {
+   "input": "Amantadin Sülfat oral formlarının profilaktik (koruyucu) kullanımı hangi durumlarda ve hangi raporla ödenir?",
+   "output": {
+    "kuralId": "EK4F.Madde50",
+    [cite_start]"kaynakBelge": "EK-4/F [cite: 1]",
+    [cite_start]"etkenMadde": "Amantadin Sülfat oral formları [cite: 1]",
+    [cite_start]"endikasyon": "İnfluenza A'ya bağlı salgın olduğu durumlarda profilaktik olarak [cite: 1]",
+    "kosullar": [
+     {
+      "tip": "HASTA_GRUP_KISITI",
+      [cite_start]"aciklama": "7 yaş altı VE 65 yaş üstü VEYA risk gruplarında (HIV (+), malignite, DM dahil herhangi bir kronik metabolik hastalığı, kronik renal disfonksiyonu, hemoglobinopatisi veya immun yetmezliği olan veya immunsupresif tedavi alan erişkin ve çocuklar VEYA 6 ay-18 yaş arasında olan ve uzun süreli asetilsalisilik asit tedavisi alan çocuk ve adelosanlarda) [cite: 1]"
+     },
+     {
+      "tip": "TEDAVI_KOSULU",
+      [cite_start]"aciklama": "Grip aşısının yapılamadığı (kontrendike olduğu durumlar ile erken aşılamanın yapılamadığı durumlar) durumlarda [cite: 1]"
+     }
+    ],
+    "gereklilikler": {
+     [cite_start]"raporTuru": "Sağlık Kurulu Raporu [cite: 1]",
+     [cite_start]"raporSuresi": "En fazla 6 ay [cite: 1]",
+     "receteDuzenleyenHekimler": {
+      "branslar": [
+       "UZMAN_HEKİMLER"
+      ],
+      [cite_start]"kural": "TÜMÜ [cite: 1]"
+     }
+    },
+    [cite_start]"ekBilgi": "Parkinson endikasyonunda SUT’un 4.2.36 maddesi esaslarına göre ödenir. [cite: 1]"
+   }
+  },
+  {
+   "input": "Fludrokortizon etken maddesinin SUT ödeme koşulları nedir? Primer adrenokortikal yetmezlik ve otonom nöropati endikasyonları arasındaki farklar nelerdir?",
+   "output": {
+    "kuralId": "EK4F.Madde77",
+    "kaynakBelge": "EK-4/F",
+    "etkenMadde": "Fludrokortizon",
+    "kural_1_EndikasyonA": {
+     "endikasyon": "Primer adrenokortikal yetmezlik (Addison hastalığı) VEYA tuz kaybettiren adrenogenital sendrom",
+     "kosullar": [
+      {
+       "tip": "KOMBINASYON_SARTI",
+       "aciklama": "Glukokortikoid ile kombine olarak kullanılması halinde"
+      }
+     ],
+     "gereklilikler": {
+      "raporTuru": "Uzman Hekim Raporu",
+      "raporDuzenleyenHekimler": {
+       "branslar": [
+        "Endokrinoloji ve Metabolizma Hastalıkları"
+       ],
+       "kural": "SADECE_BU"
+      },
+      "receteDuzenleyenHekimler": {
+       "branslar": [
+        "Endokrinoloji ve Metabolizma Hastalıkları",
+        "İç Hastalıkları",
+        "Çocuk Sağlığı ve Hastalıkları"
+       ],
+       "kural": "EN_AZ_BIRI"
+      }
+     }
+    },
+    "kural_2_EndikasyonB": {
+     "endikasyon": "Primer (çoklu sistem dejenerasyonu, parkinson hastalığı vb.) VEYA sekonder (diyabetik nefropati, amiloidoz, alkol kötüye kullanımı vb.) otonom nöropatide ortostatik hipotansiyonun kısa dönemli tedavisi",
+     "gereklilikler": {
+      "raporTuru": "Uzman Hekim Raporu",
+      "raporSuresi": "En fazla 2 ay",
+      "raporDuzenleyenHekimler": {
+       "branslar": [
+        "Endokrinoloji",
+        "Kardiyoloji",
+        "Nöroloji"
+       ],
+       "kural": "EN_AZ_BIRI"
+      },
+      "receteDuzenleyenHekimler": {
+       "branslar": [
+        "Endokrinoloji",
+        "Kardiyoloji",
+        "Nöroloji"
+       ],
+       "kural": "EN_AZ_BIRI"
+      }
+     }
+    }
+   }
+  },
+  {
+   "input": "Sapropterin dihidroklorür (fenilketonüri ilacı) hangi test sonucuna göre ödenir?",
+   "output": {
+    "kuralId": "EK4F.Madde71",
+    "kaynakBelge": "EK-4/F",
+    "etkenMadde": "Sapropterin dihidroklorür",
+    "kosul_1_TestYaniti": {
+     "endikasyon": "Fenilketonürili hastalar",
+     "kosullar": [
+      {
+       "tip": "LAB_TEST_YANITI",
+       "aciklama": "BH4 yanıtlılık testinde başlangıç fenilalanin düzeyine göre en az %30 düşme tespit edilen"
+      }
+     ]
+    },
+    "kosul_2_Tani": {
+     "endikasyon": "Tetrahidrobiopterin (BH4) metabolizması bozukluğu",
+     "kosullar": [
+      {
+       "tip": "TANI_DOGRULAMA",
+       "aciklama": "Tanısı enzim düzeyi ölçülmek suretiyle ya da genetik olarak konmuş hastalar"
+      }
+     ]
+    },
+    "gereklilikler": {
+     "raporTuru": "Uzman Hekim Raporu",
+     "raporSuresi": "1 Yıl",
+     "raporDuzenleyenHekimler": {
+      "branslar": [
+       "Çocuk Metabolizma Hastalıkları"
+      ],
+      "kural": "SADECE_BU"
+     },
+     "receteDuzenleyenHekimler": {
+      "branslar": [
+       "Çocuk Metabolizma Hastalıkları",
+       "Çocuk Sağlığı ve Hastalıkları"
+      ],
+      "kural": "EN_AZ_BIRI"
+     }
+    }
+   }
+  },
+  {
+   "input": "İkatibant (Herediter Anjiyoödem) ilacının ödenme koşulları nedir? Hangi hastanelerde raporu düzenlenebilir ve raporda hangi test sonucu belirtilmelidir?",
+   "output": {
+    "kuralId": "EK4F.Madde75.Baslangic",
+    "kaynakBelge": "EK-4/F",
+    "etkenMadde": "İkatibant",
+    "endikasyon": "Herediter anjiyoödem (HAÖ) akut ataklarının tedavisi (C1 esteraz inhibitörü eksikliği VEYA C1 esteraz inhibitörü düzeyi normal/yüksekse inhibitör fonksiyonunun düşüklüğü ile birlikte seyreden)",
+    "kosullar": [
+     {
+      "tip": "YAS_GRUP",
+      "aciklama": "2 yaş ve üzerindeki hastalar"
+     },
+     {
+      "tip": "HASTANE_TIPI",
+      "aciklama": "Üçüncü basamak sağlık kurumları (resmi sağlık hizmeti sunucuları veya Kurumla sözleşmeli vakıf üniversitesi/özel hastaneler)"
+     }
+    ],
+    "gereklilikler": {
+     "raporTuru": "Sağlık Kurulu Raporu",
+     "raporSuresi": "1 Yıl",
+     "raporIcerigi": "C1 esteraz inhibitörü düzeyi/fonksiyonu değer olarak belirtilir.",
+     "raporDuzenleyenHekimler": {
+      "branslar": [
+       "İmmünoloji",
+       "Alerji",
+       "İmmünoloji ve Alerji Hastalıkları"
+      ],
+      "kural": "EN_AZ_BIRININ_YER_ALDIGI"
+     },
+     "receteDuzenleyenHekimler": {
+      "branslar": [
+       "TÜM_UZMAN_HEKİMLER"
+      ],
+      "kural": "TÜMÜ"
+     }
+    }
+   }
+  },
+  {
+   "input": "İkatibant kullanımında 3 ay içinde 4 enjektörden fazla kullanım olursa reçeteleme kuralı nasıl değişir?",
+   "output": {
+    "kuralId": "EK4F.Madde75.Eskalasyon",
+    "kaynakBelge": "EK-4/F",
+    "etkenMadde": "İkatibant",
+    "kosullar": [
+     {
+      "tip": "KULLANIM_SIKLIGI",
+      "aciklama": "Hastanın 3 ay içinde toplam 4 enjektörden fazla kullanımının olduğu durumda"
+     }
+    ],
+    "gereklilikler": {
+     "aciklama": "Normalde 'Tüm Uzman Hekimlerce' reçetelenebilirken, bu kural tetiklendiğinde",
+     "receteDuzenleyenHekimler": {
+      "branslar": [
+       "İmmünoloji",
+       "İmmünoloji ve Alerji",
+       "Alerji"
+      ],
+      "kural": "SADECE_BU_UZMAN_HEKIMLERCE",
+      "aciklama": "Bundan sonra düzenlenecek tüm reçetelerin bu uzmanlarca düzenlenmesi halinde bedelleri Kurumca karşılanır."
+     }
+    }
+   }
+  },
+  {
+   "input": "Alprostadil 10 ve 20 mcg/ml (erektil disfonksiyon tedavisi) için rapor ve dozlama kuralları nedir?",
+   "output": {
+    "kuralId": "EK4F.Madde37.1",
+    "kaynakBelge": "EK-4/F",
+    "etkenMadde": "Alprostadil 10 ve 20 mcg/ml",
+    "endikasyon": "Yetişkin erkek hastalarda nörojenik, vaskülojenik, psikojenik ya da karışık etiyoloji kaynaklı erektil disfonksiyon tedavisi VEYA teşhisinde diğer tanı testlerine yardımcı olarak",
+    "gereklilikler": {
+     "raporTuru": "Uzman Hekim Raporu",
+     "raporSuresi": "1 Yıl",
+     "raporDuzenleyenHekimler": {
+      "branslar": [
+       "Üroloji"
+      ],
+      "kural": "SADECE_BU"
+     },
+     "receteDuzenleyenHekimler": {
+      "branslar": [
+       "Üroloji"
+      ],
+      "kural": "SADECE_BU"
+     }
+    },
+    "dozKisitlamasi": [
+     {
+      "adim": "1 (İlk Reçete)",
+      "doz": "Tek doz olarak"
+     },
+     {
+      "adim": "2 (Devam Reçeteleri)",
+      "kosul": "Yan etki oluşmayan hastalarda (bu durum reçetede belirtilerek)",
+      "doz": "En fazla 2 haftalık dozlarda"
+     }
+    ]
+   }
+  },
+  {
+   "input": "Levocarnitin (Metacarnitine) ayaktan tedavide hangi basamak sağlık tesislerinde ve hangi raporla ödenir?",
+   "output": {
+    "kuralId": "EK4F.Madde70",
+    "kaynakBelge": "EK-4/F",
+    "etkenMadde": "Levocarnitin",
+    "kullanimAlani": "Ayaktan Tedavi",
+    "kosullar": [
+     {
+      "tip": "HASTANE_TIPI",
+      "aciklama": "Yalnızca 2. ve 3. basamak sağlık hizmeti sunucularında"
+     }
+    ],
+    "gereklilikler": {
+     "raporTuru": "Sağlık Kurulu Raporu",
+     "raporDuzenleyenHekimler": {
+      "branslar": [
+       "Nefroloji",
+       "Endokrinoloji",
+       "Nöroloji",
+       "Kardiyoloji",
+       "Çocuk Metabolizma",
+       "Hemodiyaliz sertifikalı İç Hastalıkları"
+      ],
+      "kural": "EN_AZ_BIRININ_BULUNDUGU"
+     },
+     "receteDuzenleyenHekimler": {
+      "branslar": [
+       "Nefroloji",
+       "Endokrinoloji",
+       "Nöroloji",
+       "Kardiyoloji",
+       "Çocuk Metabolizma",
+       "Hemodiyaliz sertifikalı İç Hastalıkları"
+      ],
+      "kural": "SADECE_BU_HEKIMLERCE"
+     }
+    }
+   }
+  },
+  {
+   "input": "Pasireotid etken maddesinin Cushing hastalığı tedavisinde ödeme koşulları nedir? Başlangıç ve devam tedavisi süreci nasıl işler?",
+   "output": {
+    "kuralId": "EK4F.Madde64",
+    "kaynakBelge": "EK-4/F",
+    "etkenMadde": "Pasireotid",
+    "endikasyon": "Cerrahi müdahalenin bir tedavi seçeneği olmadığı ya da başarısız olduğu Cushing hastalığı olan erişkin hastalar",
+    "kural_1_Baslangic": {
+     "aciklama": "Tedavi Başlangıcı",
+     "gereklilikler": {
+      "raporTuru": "Sağlık Kurulu Raporu",
+      "raporSuresi": "3 Ay",
+      "raporDuzenleyenHekimler": {
+       "branslar": [
+        "Endokrinoloji ve Metabolizma"
+       ],
+       "kural": "EN_AZ_BIRININ_YER_ALDIGI"
+      },
+      "receteDuzenleyenHekimler": {
+       "branslar": [
+        "Endokrinoloji ve Metabolizma"
+       ],
+       "kural": "SADECE_BU"
+      }
+     }
+    },
+    "kural_2_Devam": {
+     "aciklama": "Devam Tedavisi (3. Ay Sonrası)",
+     "kosullar": [
+      {
+       "tip": "TEDAVI_YANITI_VE_LAB_TEST",
+       "aciklama": "3 ay sonundaki değerlendirmede üriner serbest kortizol [UFC] düzeylerinde klinik açıdan anlamlı azalma olması (yeni raporda belirtilmeli)"
+      }
+     ],
+     "gereklilikler": {
+      "raporTuru": "Sağlık Kurulu Raporu (Yenileme)",
+      "raporSuresi": "6 Ay",
+      "raporDuzenleyenHekimler": {
+       "branslar": [
+        "Endokrinoloji ve Metabolizma"
+       ],
+       "kural": "EN_AZ_BIRININ_YER_ALDIGI"
+      },
+      "receteDuzenleyenHekimler": {
+       "branslar": [
+        "Endokrinoloji ve Metabolizma"
+       ],
+       "kural": "SADECE_BU"
+      }
+     }
+    }
+   }
+  },
+  {
+   "input": "Nitisinon etken maddesinin Tip 1 herediter tirozinemi (HT-1) tedavisinde ödeme koşulu nedir?",
+   "output": {
+    "kuralId": "EK4F.Madde66",
+    "kaynakBelge": "EK-4/F",
+    "etkenMadde": "Nitisinon",
+    "endikasyon": "Tip 1 herediter tirozinemi (HT-1) tanısı doğrulanmış hastalar",
+    "kosullar": [
+     {
+      "tip": "ES_ZAMANLI_TEDAVI",
+      "aciklama": "Tirozin ve fenilalanin kısıtlaması olan diyet ile birlikte"
+     }
+    ],
+    "gereklilikler": {
+     "raporTuru": "Sağlık Kurulu Rporu",
+     "raporSuresi": "1 Yıl",
+     "raporDuzenleyenHekimler": {
+      "branslar": [
+       "Çocuk Metabolizma"
+      ],
+      "kural": "EN_AZ_BIRININ_YER_ALDIGI"
+     },
+     "receteDuzenleyenHekimler": {
+      "branslar": [
+       "Çocuk Metabolizma"
+      ],
+      "kural": "SADECE_BU"
+     }
+    }
+   }
+  },
+  {
+   "input": "Karglumik asit hangi tip hiperamonyemi tanılarında ve hangi uzmanların raporuyla ödenir?",
+   "output": {
+    "kuralId": "EK4F.Madde80",
+    "kaynakBelge": "EK-4/F",
+    "etkenMadde": "Karglumik asit",
+    "endikasyon": [
+     "N-asetilglutamat sentaz primer yetmezliğine bağlı hiperamonyemi",
+     "İzovalerik asidemiye bağlı hiperamonyemi",
+     "Metilmalonik asidemiye bağlı hiperamonyemi",
+     "Propiyonik asidemiye bağlı hiperamonyemi"
+    ],
+    "gereklilikler": {
+     "raporTuru": "Uzman Hekim Raporu",
+     "raporSuresi": "6 Ay",
+     "raporDuzenleyenHekimler": {
+      "branslar": [
+       "Çocuk Metabolizma",
+       "Çocuk Endokrin ve Metabolizma"
+      ],
+      "kural": "EN_AZ_BIRI"
+     },
+     "receteDuzenleyenHekimler": {
+      "branslar": [
+       "Çocuk Metabolizma",
+       "Çocuk Endokrin ve Metabolizma",
+       "Çocuk Sağlığı ve Hastalıkları",
+       "İç Hastalıkları"
+      ],
+      "kural": "EN_AZ_BIRI"
+     }
+    }
+   }
+  },
+  {
+   "input": "İloprost trometamol (intravenöz) veya Alprostadil 20 mcg/ml'nin tıkayıcı periferik arter hastalığında ödenme koşulları nedir?",
+   "output": {
+    "kuralId": "EK4F.Madde37",
+    "kaynakBelge": "EK-4/F",
+    "etkenMadde": [
+     "İloprost trometamol (İntravenöz formları)",
+     "Alprostadil 20 mcg/ml"
+    ],
+    "endikasyon": "Tıkayıcı periferik arter hastalığı (Fontan Evre III ve IV)",
+    "kosullar": [
+     {
+      "tip": "TEDAVI_ASAMASI",
+      "aciklama": "Diğer tedavilerin başarısız ya da imkânsız olduğu durumlarda son tedavi seçeneği olarak"
+     },
+     {
+      "tip": "HASTANE_TIPI",
+      "aciklama": "3. basamak sağlık tesisleri"
+     },
+     {
+      "tip": "TANI_DOGRULAMA_GEREKLILIGI",
+      "aciklama": "Raporda tanıyı doğrulayan resmi kurumca onaylanmış görüntüleme tetkik sonuçları belirtilmelidir."
+     }
+    ],
+    "gereklilikler": {
+     "raporTuru": "Uzman Hekim Raporu",
+     "raporDuzenleyenHekimler": {
+      "branslar": [
+       "Kardiyoloji",
+       "Kardiyovasküler Cerrahi",
+       "Göğüs Hastalıkları",
+       "Pediyatrik Kardiyoloji",
+       "Romatoloji"
+      ],
+      "kural": "EN_AZ_BIRI"
+     },
+     "receteDuzenleyenHekimler": {
+      "branslar": [
+       "Kardiyoloji",
+       "Kardiyovasküler Cerrahi",
+       "Göğüs Hastalıkları",
+       "Pediyatrik Kardiyoloji",
+      "Romatoloji"
+      ],
+      "kural": "SADECE_BU_UZMAN_HEKIMLERCE"
+     }
+    }
+   }
+  },
+  {
+   "input": "Deksametazon intravitreal implant (Ozurdex gibi) üveit tedavisinde ödenme koşulları ve yıllık uygulama limiti nedir?",
+   "output": {
+    "kuralId": "EK4F.Madde56",
+    "kaynakBelge": "EK-4/F",
+    "etkenMadde": "Deksametazon intravitreal İmplant",
+    "endikasyon": "Gözün posterior segmentinde kendisini non-infeksiyöz üveit şeklinde gösteren enflamasyon",
+    "kosullar": [
+     {
+      "tip": "HASTANE_TIPI",
+      "aciklama": "3. basamak sağlık tesislerinde"
+     }
+    ],
+    "gereklilikler": {
+     "raporTuru": "Sağlık Kurulu Raporu",
+     "raporSuresi": "6 Ay",
+     "raporDuzenleyenHekimler": {
+      "branslar": [
+       "Göz Hastalıkları"
+      ],
+      "kural": "UC_HEKIM_IMZALI (En az üç göz hastalıkları uzmanı)"
+     },
+     "receteDuzenleyenHekimler": {
+      "branslar": [
+       "Göz Hastalıkları"
+      ],
+      "kural": "SADECE_BU"
+     }
+    },
+    "dozKisitlamasi": "Her bir göz için yılda maksimum 4 uygulama yapılır."
+   }
+  },
+  {
+   "input": "Pilokarpin HCL oral formlarının ödeme koşulları nedir? Kserostomi ve Sjögren sendromu endikasyonları arasındaki raporlama (rapor türü, süresi, branş) farklarını açıklayın.",
+   "output": {
+    "kuralId": "EK4F.Madde48",
+    "kaynakBelge": "EK-4/F",
+    "etkenMadde": "Pilokarpin HCL oral formları",
+    "kural_1_EndikasyonA": {
+     "endikasyon": "Kserostomi (Radyoterapi/Kemoterapiye bağlı)",
+     "gereklilikler": {
+      "raporTuru": "Uzman Hekim Raporu",
+      "raporSuresi": "3 Ay",
+      "raporDuzenleyenHekimler": {
+       "branslar": [
+        "Radyasyon Onkolojisi",
+        "Tıbbi Onkoloji",
+        "Hematoloji",
+        "Kulak Burun Boğaz"
+       ],
+       "kural": "EN_AZ_BIRI"
+      },
+      "receteDuzenleyenHekimler": {
+       "branslar": [
+        "UZMAN_HEKİMLER"
+       ],
+       "kural": "TÜMÜ (Uzman hekimlerce reçetelenir)"
+      }
+     }
+    },
+    "kural_2_EndikasyonB": {
+     "endikasyon": "Sjögren sendromu",
+     "gereklilikler": {
+      "raporTuru": "Sağlık Kurulu Raporu",
+      "raporSuresi": "1 Yıl",
+      "raporIcerigi": "İlacın kullanım dozu belirtilmelidir.",
+      "raporDuzenleyenHekimler": {
+       "branslar": [
+        "Romatoloji",
+        "İmmunoloji",
+        "Fizik Tedavi ve Rehabilitasyon"
+       ],
+       "kural": "EN_AZ_BIRININ_YER_ALDIGI"
+      },
+      "receteDuzenleyenHekimler": {
+       "branslar": [
+        "Romatoloji",
+        "İmmunoloji",
+        "Fizik Tedavi ve Rehabilitasyon",
+        "İç Hastalıkları"
+       ],
+       "kural": "EN_AZ_BIRI"
+      }
+     }
+    }
+   }
+  },
+  {
+   "input": "Anjiotensin reseptör blokerlerinin (İrbesartan, Kandesartan, Losartan vb.) *kombinasyon* preparatlarının (örn: +HCTZ) ödenmesi için raporda belirtilmesi gereken özel şart nedir?",
+   "output": {
+    "kuralId": "EK4F.Madde51.Kombinasyon",
+    "kaynakBelge": "EK-4/F",
+    "etkenMaddeGrubu": "Anjiotensin reseptör blokerleri (Kombinasyonları dahil)",
+    "endikasyon": "Hipertansiyon",
+    "kosullar": [
+     {
+      "tip": "ONCEKI_TEDAVI_YANITSIZLIGI (Kombinasyon için)",
+      "aciklama": "Hastanın monoterapi ile kan basıncının yeterli oranda kontrol altına alınamadığının raporda belirtilmesi gerekmektedir."
+     }
+    ],
+    "gereklilikler": {
+     "raporTuru": "Uzman Hekim Raporu",
+     "raporIcerigi": "Kombinasyon preparatları için monoterapiye yanıtsızlık belirtilmelidir."
+    }
+   }
+  },
+  {
+   "input": "Inosin Pranobeks etken maddesi hangi tanıda, hangi uzmanlarca *reçete edilebilir* ve rapor gerekir mi?",
+   "output": {
+    "kuralId": "EK4F.Madde86",
+    "kaynakBelge": "EK-4/F",
+    "etkenMadde": "Inosin Pranobeks",
+    "endikasyon": "Yalnızca subakut sklerozan panensefalit (SSPE)",
+    "gereklilikler": {
+     "raporTuru": "Yok (Raporsuz)",
+     "raporSuresi": null,
+     "receteDuzenleyenHekimler": {
+      "branslar": [
+       "Erişkin Nöroloji",
+       "Çocuk Nöroloji"
+      ],
+      "kural": "SADECE_BU_UZMAN_HEKIMLERCE"
+     }
+    },
+    "aciklama": "Bu ilaç raporsuzdur ancak reçeteleme yetkisi sadece belirli uzmanlarla kısıtlanmıştır."
+   }
+  },
+  {
+   "input": "Kortikosteroidli tek doz göz damlaları hem raporlu hem raporsuz nasıl yazılabilir?",
+   "output": {
+    "kuralId": "EK4F.Madde29",
+    "kaynakBelge": "EK-4/F",
+    "etkenMadde": "Kortikosteroidli tek doz göz damlaları",
+    "kuralYapisi": "CIFTE_KOSUL",
+    "kosul_1_Raporsuz": {
+     "raporTuru": "Yok (Raporsuz)",
+     "receteDuzenleyenHekimler": {
+      "branslar": [
+       "Göz Hastalıkları"
+      ],
+      "kural": "SADECE_BU_UZMAN_HEKIMLER"
+     }
+    },
+    "kosul_2_Raporlu": {
+     "raporTuru": "Uzman Hekim Raporu",
+     "raporDuzenleyenHekimler": {
+      "branslar": [
+       "Göz Hastalıkları"
+      ],
+      "kural": "SADECE_BU_UZMAN_HEKIMLER"
+     },
+     "receteDuzenleyenHekimler": {
+      "branslar": [
+       "TÜM_HEKİMLER"
+      ],
+      "kural": "TÜMÜ"
+     }
+    }
+   }
+  },
+  {
+   "input": "Budezonit etken maddesinin 'Otoimmun hepatit' endikasyonunda ödenme kuralı nedir?",
+   "output": {
+    "kuralId": "EK4F.Madde68",
+    "kaynakBelge": "EK-4/F",
+    "etkenMadde": "Budezonit",
+    "endikasyon": "Otoimmun hepatit",
+    "gereklilikler": {
+     "raporTuru": "Uzman Hekim Raporu",
+     "raporSuresi": "1 Yıl",
+     "raporDuzenleyenHekimler": {
+      "branslar": [
+       "Gastroenteroloji",
+       "İç Hastalıkları"
+      ],
+      "kural": "EN_AZ_BIRI"
+     },
+     "receteDuzenleyenHekimler": {
+      "branslar": [
+       "TÜM_HEKİMLER"
+      ],
+      "kural": "TÜMÜ"
+     }
+    }
+   }
+  },
+  {
+   "input": "Betain anhidroz etken maddesi hangi homosistinüri tiplerinde ve hangi raporla ödenir?",
+   "output": {
+    "kuralId": "EK4F.Madde85",
+    "kaynakBelge": "EK-4/F",
+    "etkenMadde": "Betain anhidroz",
+    "endikasyon": "Sistation beta-sentaz (CBS) eksikliği VEYA 5,10-metilen-tetrahidrofolat redüktaz (MTHFR) eksikliği VEYA Kobalamin kofaktör metabolizması (cbl) bozukluğu ile ortaya çıkan homosistinürinin tedavisi",
+    "gereklilikler": {
+     "raporTuru": "Uzman Hekim Raporu",
+     "raporSuresi": "6 Ay",
+     "raporDuzenleyenHekimler": {
+      "branslar": [
+       "Çocuk Metabolizma",
+       "Çocuk Endokrin ve Metabolizma"
+      ],
+      "kural": "EN_AZ_BIRI"
+     },
+     "receteDuzenleyenHekimler": {
+      "branslar": [
+       "Çocuk Metabolizma",
+       "Çocuk Endokrin ve Metabolizma"
+      ],
+      "kural": "EN_AZ_BIRI"
+     }
+    }
+   }
+  },
+  {
+   "input": "Gliserol+sorbitol içeren laksatiflerin ödeme koşulları nedir? Hangi durumlarda raporlu, hangi durumlarda raporsuz ödenir?",
+   "output": {
+    "kuralId": "EK4F.Madde57",
+    "kaynakBelge": "EK-4/F",
+    "etkenMadde": "Gliserol+sorbitol içeren laksatifler",
+    "kural_1_Raporlu": {
+     [cite_start]"endikasyon": "Tetrapleji, hemipleji, parapleji ve spinal kord yaralanmalarına bağlı gastrointestinal fonksiyon bozukluğu durumları [cite: 65]",
+     "gereklilikler": {
+      [cite_start]"raporTuru": "Sağlık Kurulu Raporu [cite: 65]",
+      "raporDuzenleyenHekimler": {
+       "branslar": [
+        "Gastroenteroloji",
+        "Nöroloji"
+       ],
+       [cite_start]"kural": "EN_AZ_BIRININ_YER_ALDIGI [cite: 65]"
+      },
+      "receteDuzenleyenHekimler": {
+       "branslar": [
+        "TÜM_HEKİMLER"
+       ],
+       [cite_start]"kural": "TÜMÜ [cite: 65]"
+      }
+     }
+    },
+    "kural_2_Raporsuz": {
+     [cite_start]"endikasyon": "Kural 1'deki durumların dışında [cite: 65]",
+     "gereklilikler": {
+      [cite_start]"raporTuru": "Yok (Raporsuz) [cite: 65]",
+      "receteDuzenleyenHekimler": {
+       "branslar": [
+        "TÜM_HEKİMLER"
+       ],
+       [cite_start]"kural": "TÜMÜ [cite: 65]"
+      }
+     }
+    }
+   }
+  },
+  {
+   "input": "Montelukast etken maddesi, 'kronik idiyopatik ürtiker' tanısıyla hangi koşullarda ödenir?",
+   "output": {
+    "kuralId": "EK4F.Madde62",
+    "kaynakBelge": "EK-4/F",
+    "etkenMadde": "Montelukast",
+    [cite_start]"endikasyon": "Antihistaminiklere dirençli kronik idiyopatik ürtikerin kombine tedavisi [cite: 75]",
+    "kuralYapisi": "CIFTE_KOSUL",
+    "kosul_1_Raporsuz": {
+     "raporTuru": "Yok (Raporsuz)",
+     "receteDuzenleyenHekimler": {
+      "branslar": [
+       "Alerji",
+       "İmmunoloji",
+       "Çocuk Sağlığı ve Hastalıkları",
+       "Göğüs Hastalıkları",
+       "İç Hastalıkları",
+       "Dermatoloji"
+      ],
+      [cite_start]"kural": "SADECE_BU_UZMAN_HEKIMLER [cite: 75]"
+     }
+    },
+    "kosul_2_Raporlu": {
+     [cite_start]"raporTuru": "Uzman Hekim Raporu [cite: 75]",
+     "raporDuzenleyenHekimler": {
+      "branslar": [
+       "Alerji",
+       "İmmunoloji",
+       "Çocuk Sağlığı ve Hastalıkları",
+       "Göğüs Hastalıkları",
+       "İç Hastalıkları",
+       "Dermatoloji"
+      ],
+      [cite_start]"kural": "SADECE_BU_UZMAN_HEKIMLER [cite: 75]"
+     },
+     "receteDuzenleyenHekimler": {
+      "branslar": [
+        "TÜM_HEKİMLER"
+       ],
+      [cite_start]"kural": "TÜMÜ [cite: 75]"
+     }
+    }
+   }
+  },
+  {
+   "input": "Biotin etken maddesi hangi metabolik hastalıklarda ve hangi raporla ödenir?",
+   "output": {
+    "kuralId": "EK4F.Madde60",
+    "kaynakBelge": "EK-4/F",
+    "etkenMadde": "Biotin",
+    [cite_start]"endikasyon": "Yalnızca Doğuştan Metabolik ve Kalıtsal Hastalıklar, MNGIE (Mitokondriyal Nörogastrointestinal Ensefalomiyelopati) VE Mitokondrial sitopati [cite: 71]",
+    "gereklilikler": {
+     [cite_start]"raporTuru": "Uzman Hekim Raporu [cite: 72]",
+     "raporDuzenleyenHekimler": {
+      "branslar": [
+       "Metabolizma Hastalıkları",
+       "Endokrinoloji"
+      ],
+      [cite_start]"kural": "EN_AZ_BIRI [cite: 72]"
+     },
+     "receteDuzenleyenHekimler": {
+      "branslar": [
+        "TÜM_HEKİMLER"
+       ],
+      [cite_start]"kural": "TÜMÜ [cite: 72]"
+     }
+    }
+   }
+  },
+  {
+   "input": "Dornaz alfa (Kistik Fibrozis ilacı) için SUT raporlama koşulu nedir?",
+   "output": {
+    "kuralId": "EK4F.Madde38",
+    "kaynakBelge": "EK-4/F",
+    "etkenMadde": "Dornaz alfa",
+    [cite_start]"endikasyon": "Yalnızca kistik fibrozisli hastalarda [cite: 29]",
+    "kosullar": [
+     {
+      "tip": "HASTANE_TIPI",
+      [cite_start]"aciklama": "3. basamak sağlık hizmeti sunucularınca düzenlenen [cite: 29]"
+     }
+    ],
+    "gereklilikler": {
+     [cite_start]"raporTuru": "Sağlık Kurulu Raporu [cite: 29]",
+     "receteDuzenleyenHekimler": {
+      "branslar": [
+       "TÜM_HEKİMLER"
+      ],
+      [cite_start]"kural": "TÜMÜ [cite: 29]"
+     }
+    }
+   }
+  },
+  {
+   "input": "Benzidamin hidroklorür içeren vajinal çözelti hangi spesifik durumda ve hangi dozda ödenir?",
+   "output": {
+    "kuralId": "EK4F.Madde82",
+    "kaynakBelge": "EK-4/F",
+    [cite_start]"etkenMadde": "Benzidamin hidroklorür içeren vajinal çözelti [cite: 128]",
+    [cite_start]"endikasyon": "Yalnızca radyoterapi tedavisi ile gelişen vajinal radyomukozit tedavisi [cite: 129]",
+    "gereklilikler": {
+     [cite_start]"raporTuru": "Sağlık Raporu (Uzman Hekim Raporu) [cite: 129]",
+     [cite_start]"raporIcerigi": "Bu durumun belirtildiği [cite: 129]",
+     "raporDuzenleyenHekimler": {
+      "branslar": [
+       "Kadın Hastalıkları ve Doğum"
+      ],
+      [cite_start]"kural": "SADECE_BU [cite: 129]"
+     },
+     "receteDuzenleyenHekimler": {
+      "branslar": [
+       "Kadın Hastalıkları ve Doğum"
+      ],
+      [cite_start]"kural": "SADECE_BU [cite: 129]"
+     }
+    },
+    [cite_start]"dozKisitlamasi": "En fazla 1 aylık dozda [cite: 129]"
+   }
+  },
+  {
+   "input": "Oksimetolon etken maddesinin ayaktan tedavide raporlu ve raporsuz yazılma koşulları nedir?",
+   "output": {
+    "kuralId": "EK4F.Madde30",
+    "kaynakBelge": "EK-4/F",
+    "etkenMadde": "Oksimetolon",
+    "kuralYapisi": "CIFTE_KOSUL",
+    "kosul_1_Raporsuz": {
+     "raporTuru": "Yok (Raporsuz)",
+     "receteDuzenleyenHekimler": {
+      "branslar": [
+       "İç Hastalıkları",
+       "Çocuk Sağlığı ve Hastalıkları"
+      ],
+      "kural": "SADECE_BU_UZMAN_HEKIMLER",
+      [cite_start]"kaynak": "[cite: 22]"
+     }
+    },
+    "kosul_2_Raporlu": {
+     "raporTuru": "Uzman Hekim Raporu",
+     "raporDuzenleyenHekimler": {
+      "branslar": [
+       "İç Hastalıkları",
+       "Çocuk Sağlığı ve Hastalıkları"
+      ],
+      "kural": "SADECE_BU_UZMAN_HEKIMLER",
+      [cite_start]"kaynak": "[cite: 22]"
+     },
+     "receteDuzenleyenHekimler": {
+      "branslar": [
+       "TÜM_HEKİMLER"
+      ],
+      "kural": "TÜMÜ",
+      [cite_start]"kaynak": "[cite: 22]"
+     }
+    }
+   }
+  },
+  {
+   "input": "Disülfiram, naltrekson hidroklorür ve akamprosat kalsiyum etken maddelerinin raporlu/raporsuz yazılma kuralları nedir?",
+   "output": {
+    "kuralId": "EK4F.Madde31",
+    "kaynakBelge": "EK-4/F",
+    "etkenMadde": [
+     "Disülfiram",
+     "Naltrekson hidroklorür",
+     "Akamprosat kalsiyum"
+    ],
+    "kuralYapisi": "CIFTE_KOSUL",
+    "kosul_1_Raporsuz": {
+     "raporTuru": "Yok (Raporsuz)",
+     "receteDuzenleyenHekimler": {
+      "branslar": [
+       "Psikiyatri"
+      ],
+      "kural": "SADECE_BU_UZMAN_HEKIMLER",
+      [cite_start]"kaynak": "[cite: 22]"
+     }
+    },
+    "kosul_2_Raporlu": {
+     "raporTuru": "Uzman Hekim Raporu",
+     "raporDuzenleyenHekimler": {
+      "branslar": [
+       "Psikiyatri"
+      ],
+      "kural": "SADECE_BU_UZMAN_HEKIMLER",
+      [cite_start]"kaynak": "[cite: 22]"
+     },
+     "receteDuzenleyenHekimler": {
+      "branslar": [
+       "TÜM_HEKİMLER"
+      ],
+      "kural": "TÜMÜ",
+      [cite_start]"kaynak": "[cite: 22]"
+     }
+    }
+   }
+  },
+  {
+   "input": "Testosteron etken maddesinin SUT ödeme koşulları (raporlu/raporsuz) nedir?",
+   "output": {
+    "kuralId": "EK4F.Madde40",
+    "kaynakBelge": "EK-4/F",
+    "etkenMadde": "Testosteron",
+    "kuralYapisi": "CIFTE_KOSUL",
+    "kosul_1_Raporsuz": {
+     "raporTuru": "Yok (Raporsuz)",
+     "receteDuzenleyenHekimler": {
+      "branslar": [
+       "Üroloji",
+       "Endokrin",
+       "Çocuk Cerrahi"
+      ],
+      "kural": "SADECE_BU_UZMAN_HEKIMLER",
+      [cite_start]"kaynak": "[cite: 30]"
+     }
+    },
+    "kosul_2_Raporlu": {
+     "raporTuru": "Uzman Hekim Raporu",
+     "raporDuzenleyenHekimler": {
+      "branslar": [
+       "Üroloji",
+       "Endokrin",
+       "Çocuk Cerrahi"
+      ],
+      "kural": "SADECE_BU_UZMAN_HEKIMLER",
+      [cite_start]"kaynak": "[cite: 30, 31]"
+     },
+     "receteDuzenleyenHekimler": {
+      "branslar": [
+       "TÜM_HEKİMLER"
+      ],
+      "kural": "TÜMÜ",
+      [cite_start]"kaynak": "[cite: 31]"
+     }
+    }
+   }
+  },
+  {
+   "input": "Ursedeoksikolikasit etken maddesinin raporlu ve raporsuz yazılma koşulları nedir?",
+   "output": {
+    "kuralId": "EK4F.Madde41",
+    "kaynakBelge": "EK-4/F",
+    "etkenMadde": "Ursedeoksikolikasit",
+    "kuralYapisi": "CIFTE_KOSUL",
+    "kosul_1_Raporsuz": {
+     "raporTuru": "Yok (Raporsuz)",
+     "receteDuzenleyenHekimler": {
+      "branslar": [
+       "İç Hastalıkları",
+       "Çocuk Sağlığı ve Hastalıkları",
+       "Pediyatrik Cerrahi",
+       "Genel Cerrahi"
+      ],
+      "kural": "SADECE_BU_UZMAN_HEKIMLER",
+      [cite_start]"kaynak": "[cite: 31]"
+     }
+    },
+    "kosul_2_Raporlu": {
+     "raporTuru": "Uzman Hekim Raporu",
+     "raporDuzenleyenHekimler": {
+      "branslar": [
+       "İç Hastalıkları",
+       "Çocuk Sağlığı ve Hastalıkları",
+       "Pediyatrik Cerrahi",
+       "Genel Cerrahi"
+      ],
+      "kural": "SADECE_BU_UZMAN_HEKIMLER",
+      [cite_start]"kaynak": "[cite: 31]"
+     },
+     "receteDuzenleyenHekimler": {
+      "branslar": [
+       "TÜM_HEKİMLER"
+      ],
+      "kural": "TÜMÜ",
+      [cite_start]"kaynak": "[cite: 31]"
+     }
+    }
+   }
+  },
+  {
+   "input": "Potasyum sitrat (5 mEq - 10 mEq) ödeme koşulları nedir? Rapor süresi ne kadardır?",
+   "output": {
+    "kuralId": "EK4F.Madde44",
+    "kaynakBelge": "EK-4/F",
+    "etkenMadde": "Potasyum sitrat (5 mEq - 10 mEq)",
+    "kuralYapisi": "CIFTE_KOSUL",
+    "kosul_1_Raporsuz": {
+     "raporTuru": "Yok (Raporsuz)",
+     "receteDuzenleyenHekimler": {
+      "branslar": [
+       "Nefroloji",
+       "Üroloji"
+      ],
+      "kural": "SADECE_BU_UZMAN_HEKIMLER",
+      [cite_start]"kaynak": "[cite: 31, 32]"
+     }
+    },
+    "kosul_2_Raporlu": {
+     "raporTuru": "Uzman Hekim Raporu",
+     "raporSuresi": "6 Ay",
+     "raporDuzenleyenHekimler": {
+      "branslar": [
+       "Nefroloji",
+       "Üroloji"
+      ],
+      "kural": "SADECE_BU_UZMAN_HEKIMLER",
+      [cite_start]"kaynak": "[cite: 32]"
+     },
+     "receteDuzenleyenHekimler": {
+      "branslar": [
+       "TÜM_HEKİMLER"
+      ],
+      "kural": "TÜMÜ",
+      [cite_start]"kaynak": "[cite: 32]"
+     }
+    }
+   }
+  },
+  {
+   "input": "Kenodoksikolik asit etken maddesinin SUT ödeme koşulları (raporlu/raporsuz) nedir?",
+   "output": {
+    "kuralId": "EK4F.Madde32",
+    "kaynakBelge": "EK-4/F",
+    "etkenMadde": "Kenodoksikolik asit",
+    "kuralYapisi": "CIFTE_KOSUL",
+    "kosul_1_Raporsuz": {
+     "raporTuru": "Yok (Raporsuz)",
+     "receteDuzenleyenHekimler": {
+      "branslar": [
+       "İç Hastalıkları",
+       "Genel Cerrahi"
+      ],
+      "kural": "SADECE_BU_UZMAN_HEKIMLER",
+      [cite_start]"kaynak": "[cite: 22]"
+     }
+    },
+    "kosul_2_Raporlu": {
+     "raporTuru": "Uzman Hekim Raporu",
+     "raporDuzenleyenHekimler": {
+      "branslar": [
+       "İç Hastalıkları",
+       "Genel Cerrahi"
+      ],
+      "kural": "SADECE_BU_UZMAN_HEKIMLER",
+      [cite_start]"kaynak": "[cite: 22]"
+     },
+     "receteDuzenleyenHekimler": {
+      "branslar": [
+       "TÜM_HEKİMLER"
+      ],
+      "kural": "TÜMÜ",
+      [cite_start]"kaynak": "[cite: 22]"
+     }
+    }
+   }
+  },
+  {
+   "input": "Deferoksamin metansülfonat etken maddesinin SUT ödeme koşulları (raporlu/raporsuz) nedir?",
+   "output": {
+    "kuralId": "EK4F.Madde33",
+    "kaynakBelge": "EK-4/F",
+    "etkenMadde": "Deferoksamin metansülfonat",
+    "kuralYapisi": "CIFTE_KOSUL",
+    "kosul_1_Raporsuz": {
+     "raporTuru": "Yok (Raporsuz)",
+     "receteDuzenleyenHekimler": {
+      "branslar": [
+       "İç Hastalıkları",
+       "Çocuk Sağlığı ve Hastalıkları"
+      ],
+      "kural": "SADECE_BU_UZMAN_HEKIMLER",
+      [cite_start]"kaynak": "[cite: 22, 23]"
+     }
+    },
+    "kosul_2_Raporlu": {
+     "raporTuru": "Uzman Hekim Raporu",
+     "raporDuzenleyenHekimler": {
+      "branslar": [
+       "İç Hastalıkları",
+       "Çocuk Sağlığı ve Hastalıkları"
+      ],
+      "kural": "SADECE_BU_UZMAN_HEKIMLER",
+      [cite_start]"kaynak": "[cite: 22, 23]"
+     },
+     "receteDuzenleyenHekimler": {
+      "branslar": [
+       "TÜM_HEKİMLER"
+      ],
+      "kural": "TÜMÜ",
+      [cite_start]"kaynak": "[cite: 22, 23]"
+     }
+    }
+   }
+  },
+  {
+   "input": "Deferipron etken maddesinin SUT raporlama kuralı nedir?",
+   "output": {
+    "kuralId": "EK4F.Madde34",
+    "kaynakBelge": "EK-4/F",
+    "etkenMadde": "Deferipron",
+    "kuralYapisi": "TEK_KOSUL_RAPORLU",
+    "gereklilikler": {
+     "raporTuru": "Uzman Hekim Raporu",
+     "raporDuzenleyenHekimler": {
+      "branslar": [
+       "Hematoloji"
+      ],
+      "kural": "SADECE_BU",
+      [cite_start]"kaynak": "[cite: 23]"
+     },
+     "receteDuzenleyenHekimler": {
+      "branslar": [
+       "TÜM_HEKİMLER"
+      ],
+      "kural": "TÜMÜ",
+      [cite_start]"kaynak": "[cite: 23]"
+     }
+    }
+   }
+  },
+  {
+   "input": "Tauroursodeoksikolikasit etken maddesinin SUT ödeme koşulları (raporlu/raporsuz) nedir?",
+   "output": {
+    "kuralId": "EK4F.Madde42",
+    "kaynakBelge": "EK-4/F",
+    "etkenMadde": "Tauroursodeoksikolikasit",
+    "kuralYapisi": "CIFTE_KOSUL",
+    "kosul_1_Raporsuz": {
+     "raporTuru": "Yok (Raporsuz)",
+     "receteDuzenleyenHekimler": {
+      "branslar": [
+       "İç Hastalıkları",
+       "Genel Cerrahi"
+      ],
+      "kural": "SADECE_BU_UZMAN_HEKIMLER",
+      [cite_start]"kaynak": "[cite: 31]"
+     }
+    },
+    "kosul_2_Raporlu": {
+     "raporTuru": "Uzman Hekim Raporu",
+     "raporDuzenleyenHekimler": {
+      "branslar": [
+       "İç Hastalıkları",
+       "Genel Cerrahi"
+      ],
+      "kural": "SADECE_BU_UZMAN_HEKIMLER",
+      [cite_start]"kaynak": "[cite: 31]"
+     },
+     "receteDuzenleyenHekimler": {
+      "branslar": [
+       "TÜM_HEKİMLER"
+      ],
+      "kural": "TÜMÜ",
+      [cite_start]"kaynak": "[cite: 31]"
+     }
+    }
+   }
+  },
+  {
+   "input": "Tegaserod maleat etken maddesinin SUT ödeme koşulları (raporlu/raporsuz) nedir?",
+   "output": {
+    "kuralId": "EK4F.Madde43",
+    "kaynakBelge": "EK-4/F",
+    "etkenMadde": "Tegaserod maleat",
+    "kuralYapisi": "CIFTE_KOSUL",
+    "kosul_1_Raporsuz": {
+     "raporTuru": "Yok (Raporsuz)",
+     "receteDuzenleyenHekimler": {
+      "branslar": [
+       "Gastroenteroloji",
+       "İç Hastalıkları"
+      ],
+      "kural": "SADECE_BU_UZMAN_HEKIMLER",
+      [cite_start]"kaynak": "[cite: 31]"
+     }
+    },
+    "kosul_2_Raporlu": {
+     "raporTuru": "Uzman Hekim Raporu",
+     "raporDuzenleyenHekimler": {
+      "branslar": [
+       "Gastroenteroloji",
+       "İç Hastalıkları"
+      ],
+      "kural": "SADECE_BU_UZMAN_HEKIMLER",
+      [cite_start]"kaynak": "[cite: 31]"
+     },
+     "receteDuzenleyenHekimler": {
+      "branslar": [
+       "TÜM_HEKİMLER"
+      ],
+      "kural": "TÜMÜ",
+      [cite_start]"kaynak": "[cite: 31]"
+     }
+    }
+   }
+  }
+ ]
