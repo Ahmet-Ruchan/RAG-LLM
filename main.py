@@ -5,11 +5,11 @@ from vector import retriever
 model = OllamaLLM(model="llama3.2")
 
 template = """
-You are an expert in answering questions about SUT (Sağlık Uygulama Tebliği) rules and Turkish health regulations.
+Sen sana sorulan SUT (Sağlık Uygulama Tebliği) kuralları hakkında bir uzmanın cevabını verirsin.
 
-Here are some relevant SUT rules: {context}
+İlgili SUT kuralları: {context}
 
-Based on the rules above, please answer the following question: {question}
+Yukarıdaki kurallara göre aşağıdaki soruya cevap ver: {question}
 """
 prompt = ChatPromptTemplate.from_template(template)
 chain = prompt | model
