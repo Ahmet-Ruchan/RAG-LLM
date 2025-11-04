@@ -1432,26 +1432,26 @@
    "input": "Rivaroksaban etken maddesinin (elektif kalça ve diz replasmanlarında) DVT profilaksisi için ödenme koşulu ve kutu limiti nedir?",
    "output": {
     "kuralId": "EK4F.Madde54",
-    [cite_start]"kaynakBelge": "EK-4/F [cite: 1]",
-    [cite_start]"etkenMadde": "Rivaroksaban [cite: 1]",
-    [cite_start]"endikasyon": "Elektif kalça ve diz total eklem replasmanlarında derin ven trombozunun profilaksisi [cite: 1]",
+    "kaynakBelge": "EK-4/F",
+    "etkenMadde": "Rivaroksaban",
+    "endikasyon": "Elektif kalça ve diz total eklem replasmanlarında derin ven trombozunun profilaksisi",
     "gereklilikler": {
-     [cite_start]"raporTuru": "Uzman Hekim Raporu (Durumun belirtildiği) [cite: 1]",
+     "raporTuru": "Uzman Hekim Raporu (Durumun belirtildiği)",
      "raporDuzenleyenHekimler": {
       "branslar": [
        "Ortopedi"
       ],
-      [cite_start]"kural": "SADECE_BU [cite: 1]"
+      "kural": "SADECE_BU"
      }
     },
     "dozKisitlamasi": [
      {
       "prosedur": "Diz replasmanı",
-      [cite_start]"limit": "En fazla 1 kutu [cite: 1]"
+      "limit": "En fazla 1 kutu"
      },
      {
       "prosedur": "Kalça replasmanı",
-      [cite_start]"limit": "En fazla 3 kutu [cite: 1]"
+      "limit": "En fazla 3 kutu"
      }
     ]
    }
@@ -1460,26 +1460,26 @@
    "input": "Dabigatran etken maddesinin (elektif kalça ve diz replasmanlarında) DVT profilaksisi için ödenme koşulu ve gün limiti nedir?",
    "output": {
     "kuralId": "EK4F.Madde53",
-    [cite_start]"kaynakBelge": "EK-4/F [cite: 1]",
-    [cite_start]"etkenMadde": "Dabigatran [cite: 1]",
-    [cite_start]"endikasyon": "Elektif kalça ve diz total eklem replasmanlarında derin ven trombozunun profilaksisi [cite: 1]",
+    "kaynakBelge": "EK-4/F",
+    "etkenMadde": "Dabigatran",
+    "endikasyon": "Elektif kalça ve diz total eklem replasmanlarında derin ven trombozunun profilaksisi",
     "gereklilikler": {
-     [cite_start]"raporTuru": "Uzman Hekim Raporu (Durumun belirtildiği) [cite: 1]",
+     "raporTuru": "Uzman Hekim Raporu (Durumun belirtildiği)",
      "raporDuzenleyenHekimler": {
       "branslar": [
        "Ortopedi"
       ],
-      [cite_start]"kural": "SADECE_BU [cite: 1]"
+      "kural": "SADECE_BU"
      }
     },
     "dozKisitlamasi": [
      {
       "prosedur": "Diz replasmanı",
-      [cite_start]"limit": "En fazla 10 günlük kullanım bedeli ödenir [cite: 1]"
+      "limit": "En fazla 10 günlük kullanım bedeli ödenir"
      },
      {
       "prosedur": "Kalça replasmanı",
-      [cite_start]"limit": "En fazla 35 günlük kullanım bedeli ödenir [cite: 1]"
+      "limit": "En fazla 35 günlük kullanım bedeli ödenir"
      }
     ]
    }
@@ -1488,92 +1488,92 @@
    "input": "Eplerenon etken maddesinin ödenme koşulları nedir? Hangi durumda (öncül tedavi) ödenir ve hangi endikasyonda kesinlikle ödenmez?",
    "output": {
     "kuralId": "EK4F.Madde58",
-    [cite_start]"kaynakBelge": "EK-4/F [cite: 1]",
-    [cite_start]"etkenMadde": "Eplerenon [cite: 1]",
+    "kaynakBelge": "EK-4/F",
+    "etkenMadde": "Eplerenon",
     "endikasyonlar": [
-     [cite_start]"a) Akut MI sonrası klinik kalp yetmezliği olan sol ventrikül disfonksiyonlu (LVEF ≤ %40) hastalar [cite: 1]",
-     [cite_start]"b) Standart tedaviye ek olarak, kronik kalp yetmezliği (NYHA Sınıf II) ve sol ventrikül sistolik disfonksiyonu (LVEF ≤ %30) olan yetişkin hastalar [cite: 1]"
+     "a) Akut MI sonrası klinik kalp yetmezliği olan sol ventrikül disfonksiyonlu (LVEF ≤ %40) hastalar",
+     "b) Standart tedaviye ek olarak, kronik kalp yetmezliği (NYHA Sınıf II) ve sol ventrikül sistolik disfonksiyonu (LVEF ≤ %30) olan yetişkin hastalar"
     ],
     "kosullar": [
      {
       "tip": "ONCEKI_TEDAVI_YANITSIZLIGI",
-      [cite_start]"aciklama": "Yalnızca spironolakton tedavisi altındayken jinekomasti gelişen VEYA spironolaktonu tolere edemeyen hastalar [cite: 1]"
+      "aciklama": "Yalnızca spironolakton tedavisi altındayken jinekomasti gelişen VEYA spironolaktonu tolere edemeyen hastalar"
      }
     ],
     "gereklilikler": {
-     [cite_start]"raporTuru": "Uzman Hekim Raporu [cite: 1]",
+     "raporTuru": "Uzman Hekim Raporu",
      "raporDuzenleyenHekimler": {
       "branslar": [
        "Kardiyoloji"
       ],
-      [cite_start]"kural": "SADECE_BU [cite: 1]"
+      "kural": "SADECE_BU"
      },
      "receteDuzenleyenHekimler": {
       "branslar": [
        "TÜM_HEKİMLER"
       ],
-      [cite_start]"kural": "TÜMÜ [cite: 1]"
+      "kural": "TÜMÜ"
      }
     },
-    [cite_start]"negatifEndikasyon": "Hipertansiyon tedavisinde ödenmez. [cite: 1]"
+    "negatifEndikasyon": "Hipertansiyon tedavisinde ödenmez."
    }
   },
   {
    "input": "İdebenon etken maddesi hangi tanılarda ödenir ve hangi tanıda kesinlikle ödenmez?",
    "output": {
     "kuralId": "EK4F.Madde59",
-    [cite_start]"kaynakBelge": "EK-4/F [cite: 1]",
-    [cite_start]"etkenMadde": "İdebenon [cite: 1]",
-    [cite_start]"endikasyon": "Fridreich Ataksisi VEYA serebral ataksi [cite: 1]",
+    "kaynakBelge": "EK-4/F",
+    "etkenMadde": "İdebenon",
+    "endikasyon": "Fridreich Ataksisi VEYA serebral ataksi",
     "gereklilikler": {
-     [cite_start]"raporTuru": "Uzman Hekim Raporu [cite: 1]",
+     "raporTuru": "Uzman Hekim Raporu",
      "raporDuzenleyenHekimler": {
       "branslar": [
        "Nöroloji"
       ],
-      [cite_start]"kural": "SADECE_BU [cite: 1]"
+      "kural": "SADECE_BU"
      },
      "receteDuzenleyenHekimler": {
       "branslar": [
        "Nöroloji"
       ],
-      [cite_start]"kural": "SADECE_BU [cite: 1]"
+      "kural": "SADECE_BU"
      }
     },
-    [cite_start]"negatifEndikasyon": "Demans ve Alzheimer endikasyonunda Kurumca bedeli karşılanmaz. [cite: 1]"
+    "negatifEndikasyon": "Demans ve Alzheimer endikasyonunda Kurumca bedeli karşılanmaz."
    }
   },
   {
    "input": "İnsan Alfa-1-Proteinaz inhibitörü tedavisi için gereken genetik ve solunum fonksiyon testi koşulları nelerdir?",
    "output": {
     "kuralId": "EK4F.Madde74",
-    [cite_start]"kaynakBelge": "EK-4/F [cite: 1]",
-    [cite_start]"etkenMadde": "İnsan Alfa-1-Proteinaz inhibitörü [cite: 1]",
-    [cite_start]"endikasyon": "Konjenital alfa1-proteinaz inhibitörünün ciddi eksikliği [cite: 1]",
+    "kaynakBelge": "EK-4/F",
+    "etkenMadde": "İnsan Alfa-1-Proteinaz inhibitörü",
+    "endikasyon": "Konjenital alfa1-proteinaz inhibitörünün ciddi eksikliği",
     "kosullar": [
      {
       "tip": "GENETIK_TEST",
-      [cite_start]"aciklama": "Genetik tetkik ile homozigot PiZZ alleli olduğu gösterilen [cite: 1]"
+      "aciklama": "Genetik tetkik ile homozigot PiZZ alleli olduğu gösterilen"
      },
      {
       "tip": "LAB_TEST",
-      [cite_start]"aciklama": "Solunum fonksiyon testi sonucu FEV1 değeri %30’un üzerinde olan hastalar [cite: 1]"
+      "aciklama": "Solunum fonksiyon testi sonucu FEV1 değeri %30’un üzerinde olan hastalar"
      }
     ],
     "gereklilikler": {
-     [cite_start]"raporTuru": "Sağlık Kurulu Raporu [cite: 1]",
-     [cite_start]"raporSuresi": "1 Yıl [cite: 1]",
+     "raporTuru": "Sağlık Kurulu Raporu",
+     "raporSuresi": "1 Yıl",
      "raporDuzenleyenHekimler": {
       "branslar": [
        "Göğüs Hastalıkları"
       ],
-      [cite_start]"kural": "UC_HEKIM_IMZALI (Üç göğüs hastalıkları uzman hekimi tarafından düzenlenen) [cite: 1]"
+      "kural": "UC_HEKIM_IMZALI (Üç göğüs hastalıkları uzman hekimi tarafından düzenlenen)"
      },
      "receteDuzenleyenHekimler": {
       "branslar": [
        "Göğüs Hastalıkları"
       ],
-      [cite_start]"kural": "SADECE_BU [cite: 1]"
+      "kural": "SADECE_BU"
      }
     }
    }
@@ -1582,31 +1582,31 @@
    "input": "Suni gözyaşı preparatlarının raporlu ve raporsuz yazılma kuralları nedir?",
    "output": {
     "kuralId": "EK4F.Madde28",
-    [cite_start]"kaynakBelge": "EK-4/F [cite: 1]",
-    [cite_start]"etkenMadde": "Suni gözyaşı [cite: 1]",
+    "kaynakBelge": "EK-4/F",
+    "etkenMadde": "Suni gözyaşı",
     "kuralYapisi": "CIFTE_KOSUL",
     "kosul_1_Raporsuz": {
-     [cite_start]"raporTuru": "Yok (Raporsuz) [cite: 1]",
+     "raporTuru": "Yok (Raporsuz)",
      "receteDuzenleyenHekimler": {
       "branslar": [
        "Göz Hastalıkları"
       ],
-      [cite_start]"kural": "SADECE_BU_UZMAN_HEKIMLER [cite: 1]"
+      "kural": "SADECE_BU_UZMAN_HEKIMLER"
      }
     },
     "kosul_2_Raporlu": {
-     [cite_start]"raporTuru": "Uzman Hekim Raporu [cite: 1]",
+     "raporTuru": "Uzman Hekim Raporu",
      "raporDuzenleyenHekimler": {
       "branslar": [
        "Göz Hastalıkları"
       ],
-      [cite_start]"kural": "SADECE_BU_UZMAN_HEKIMLER [cite: 1]"
+      "kural": "SADECE_BU_UZMAN_HEKIMLER"
      },
      "receteDuzenleyenHekimler": {
       "branslar": [
        "TÜM_HEKİMLER"
       ],
-      [cite_start]"kural": "TÜMÜ [cite: 1]"
+      "kural": "TÜMÜ"
      }
     }
    }
@@ -1615,29 +1615,29 @@
    "input": "Tazaroten etken maddesi hangi dermatolojik tanıda ödenir, hangisinde ödenmez?",
    "output": {
     "kuralId": "EK4F.Madde76",
-    [cite_start]"kaynakBelge": "EK-4/F [cite: 1]",
-    [cite_start]"etkenMadde": "Tazaroten [cite: 1]",
+    "kaynakBelge": "EK-4/F",
+    "etkenMadde": "Tazaroten",
     "pozitifEndikasyon": {
-     [cite_start]"tani": "Yalnızca plak psöriazis [cite: 1]",
+     "tani": "Yalnızca plak psöriazis",
      "gereklilikler": {
-      [cite_start]"raporTuru": "Uzman Hekim Raporu [cite: 1]",
+      "raporTuru": "Uzman Hekim Raporu",
       "raporDuzenleyenHekimler": {
        "branslar": [
         "Dermatoloji"
        ],
-       [cite_start]"kural": "SADECE_BU [cite: 1]"
+       "kural": "SADECE_BU"
       },
       "receteDuzenleyenHekimler": {
        "branslar": [
         "Dermatoloji"
        ],
-       [cite_start]"kural": "SADECE_BU [cite: 1]"
+       "kural": "SADECE_BU"
       }
      }
     },
     "negatifEndikasyon": {
-     [cite_start]"tani": "Akne vulgaris [cite: 1]",
-     [cite_start]"sonuc": "Akne vulgaris tedavisinde reçete edilmesi halinde bedelleri Kurumca karşılanmaz. [cite:1]"
+     "tani": "Akne vulgaris",
+     "sonuc": "Akne vulgaris tedavisinde reçete edilmesi halinde bedelleri Kurumca karşılanmaz. [cite:1]"
     }
    }
   },
@@ -1645,30 +1645,30 @@
    "input": "Amantadin Sülfat oral formlarının profilaktik (koruyucu) kullanımı hangi durumlarda ve hangi raporla ödenir?",
    "output": {
     "kuralId": "EK4F.Madde50",
-    [cite_start]"kaynakBelge": "EK-4/F [cite: 1]",
-    [cite_start]"etkenMadde": "Amantadin Sülfat oral formları [cite: 1]",
-    [cite_start]"endikasyon": "İnfluenza A'ya bağlı salgın olduğu durumlarda profilaktik olarak [cite: 1]",
+    "kaynakBelge": "EK-4/F",
+    "etkenMadde": "Amantadin Sülfat oral formları",
+    "endikasyon": "İnfluenza A'ya bağlı salgın olduğu durumlarda profilaktik olarak",
     "kosullar": [
      {
       "tip": "HASTA_GRUP_KISITI",
-      [cite_start]"aciklama": "7 yaş altı VE 65 yaş üstü VEYA risk gruplarında (HIV (+), malignite, DM dahil herhangi bir kronik metabolik hastalığı, kronik renal disfonksiyonu, hemoglobinopatisi veya immun yetmezliği olan veya immunsupresif tedavi alan erişkin ve çocuklar VEYA 6 ay-18 yaş arasında olan ve uzun süreli asetilsalisilik asit tedavisi alan çocuk ve adelosanlarda) [cite: 1]"
+      "aciklama": "7 yaş altı VE 65 yaş üstü VEYA risk gruplarında (HIV (+), malignite, DM dahil herhangi bir kronik metabolik hastalığı, kronik renal disfonksiyonu, hemoglobinopatisi veya immun yetmezliği olan veya immunsupresif tedavi alan erişkin ve çocuklar VEYA 6 ay-18 yaş arasında olan ve uzun süreli asetilsalisilik asit tedavisi alan çocuk ve adelosanlarda)"
      },
      {
       "tip": "TEDAVI_KOSULU",
-      [cite_start]"aciklama": "Grip aşısının yapılamadığı (kontrendike olduğu durumlar ile erken aşılamanın yapılamadığı durumlar) durumlarda [cite: 1]"
+      "aciklama": "Grip aşısının yapılamadığı (kontrendike olduğu durumlar ile erken aşılamanın yapılamadığı durumlar) durumlarda"
      }
     ],
     "gereklilikler": {
-     [cite_start]"raporTuru": "Sağlık Kurulu Raporu [cite: 1]",
-     [cite_start]"raporSuresi": "En fazla 6 ay [cite: 1]",
+     "raporTuru": "Sağlık Kurulu Raporu",
+     "raporSuresi": "En fazla 6 ay",
      "receteDuzenleyenHekimler": {
       "branslar": [
        "UZMAN_HEKİMLER"
       ],
-      [cite_start]"kural": "TÜMÜ [cite: 1]"
+      "kural": "TÜMÜ"
      }
     },
-    [cite_start]"ekBilgi": "Parkinson endikasyonunda SUT’un 4.2.36 maddesi esaslarına göre ödenir. [cite: 1]"
+    "ekBilgi": "Parkinson endikasyonunda SUT’un 4.2.36 maddesi esaslarına göre ödenir."
    }
   },
   {
@@ -2298,33 +2298,33 @@
     "kaynakBelge": "EK-4/F",
     "etkenMadde": "Gliserol+sorbitol içeren laksatifler",
     "kural_1_Raporlu": {
-     [cite_start]"endikasyon": "Tetrapleji, hemipleji, parapleji ve spinal kord yaralanmalarına bağlı gastrointestinal fonksiyon bozukluğu durumları [cite: 65]",
+     "endikasyon": "Tetrapleji, hemipleji, parapleji ve spinal kord yaralanmalarına bağlı gastrointestinal fonksiyon bozukluğu durumları",
      "gereklilikler": {
-      [cite_start]"raporTuru": "Sağlık Kurulu Raporu [cite: 65]",
+      "raporTuru": "Sağlık Kurulu Raporu",
       "raporDuzenleyenHekimler": {
        "branslar": [
         "Gastroenteroloji",
         "Nöroloji"
        ],
-       [cite_start]"kural": "EN_AZ_BIRININ_YER_ALDIGI [cite: 65]"
+       "kural": "EN_AZ_BIRININ_YER_ALDIGI"
       },
       "receteDuzenleyenHekimler": {
        "branslar": [
         "TÜM_HEKİMLER"
        ],
-       [cite_start]"kural": "TÜMÜ [cite: 65]"
+       "kural": "TÜMÜ"
       }
      }
     },
     "kural_2_Raporsuz": {
-     [cite_start]"endikasyon": "Kural 1'deki durumların dışında [cite: 65]",
+     "endikasyon": "Kural 1'deki durumların dışında",
      "gereklilikler": {
-      [cite_start]"raporTuru": "Yok (Raporsuz) [cite: 65]",
+      "raporTuru": "Yok (Raporsuz)",
       "receteDuzenleyenHekimler": {
        "branslar": [
         "TÜM_HEKİMLER"
        ],
-       [cite_start]"kural": "TÜMÜ [cite: 65]"
+       "kural": "TÜMÜ"
       }
      }
     }
@@ -2336,7 +2336,7 @@
     "kuralId": "EK4F.Madde62",
     "kaynakBelge": "EK-4/F",
     "etkenMadde": "Montelukast",
-    [cite_start]"endikasyon": "Antihistaminiklere dirençli kronik idiyopatik ürtikerin kombine tedavisi [cite: 75]",
+    "endikasyon": "Antihistaminiklere dirençli kronik idiyopatik ürtikerin kombine tedavisi [cite: 75]",
     "kuralYapisi": "CIFTE_KOSUL",
     "kosul_1_Raporsuz": {
      "raporTuru": "Yok (Raporsuz)",
@@ -2349,11 +2349,11 @@
        "İç Hastalıkları",
        "Dermatoloji"
       ],
-      [cite_start]"kural": "SADECE_BU_UZMAN_HEKIMLER [cite: 75]"
+      "kural": "SADECE_BU_UZMAN_HEKIMLER [cite: 75]"
      }
     },
     "kosul_2_Raporlu": {
-     [cite_start]"raporTuru": "Uzman Hekim Raporu [cite: 75]",
+     "raporTuru": "Uzman Hekim Raporu [cite: 75]",
      "raporDuzenleyenHekimler": {
       "branslar": [
        "Alerji",
@@ -2363,13 +2363,13 @@
        "İç Hastalıkları",
        "Dermatoloji"
       ],
-      [cite_start]"kural": "SADECE_BU_UZMAN_HEKIMLER [cite: 75]"
+      "kural": "SADECE_BU_UZMAN_HEKIMLER [cite: 75]"
      },
      "receteDuzenleyenHekimler": {
       "branslar": [
         "TÜM_HEKİMLER"
        ],
-      [cite_start]"kural": "TÜMÜ [cite: 75]"
+      "kural": "TÜMÜ [cite: 75]"
      }
     }
    }
@@ -2380,21 +2380,21 @@
     "kuralId": "EK4F.Madde60",
     "kaynakBelge": "EK-4/F",
     "etkenMadde": "Biotin",
-    [cite_start]"endikasyon": "Yalnızca Doğuştan Metabolik ve Kalıtsal Hastalıklar, MNGIE (Mitokondriyal Nörogastrointestinal Ensefalomiyelopati) VE Mitokondrial sitopati [cite: 71]",
+    "endikasyon": "Yalnızca Doğuştan Metabolik ve Kalıtsal Hastalıklar, MNGIE (Mitokondriyal Nörogastrointestinal Ensefalomiyelopati) VE Mitokondrial sitopati [cite: 71]",
     "gereklilikler": {
-     [cite_start]"raporTuru": "Uzman Hekim Raporu [cite: 72]",
+     "raporTuru": "Uzman Hekim Raporu",
      "raporDuzenleyenHekimler": {
       "branslar": [
        "Metabolizma Hastalıkları",
        "Endokrinoloji"
       ],
-      [cite_start]"kural": "EN_AZ_BIRI [cite: 72]"
+      "kural": "EN_AZ_BIRI"
      },
      "receteDuzenleyenHekimler": {
       "branslar": [
         "TÜM_HEKİMLER"
        ],
-      [cite_start]"kural": "TÜMÜ [cite: 72]"
+      "kural": "TÜMÜ"
      }
     }
    }
@@ -2405,20 +2405,20 @@
     "kuralId": "EK4F.Madde38",
     "kaynakBelge": "EK-4/F",
     "etkenMadde": "Dornaz alfa",
-    [cite_start]"endikasyon": "Yalnızca kistik fibrozisli hastalarda [cite: 29]",
+    "endikasyon": "Yalnızca kistik fibrozisli hastalarda",
     "kosullar": [
      {
       "tip": "HASTANE_TIPI",
-      [cite_start]"aciklama": "3. basamak sağlık hizmeti sunucularınca düzenlenen [cite: 29]"
+      "aciklama": "3. basamak sağlık hizmeti sunucularınca düzenlenen"
      }
     ],
     "gereklilikler": {
-     [cite_start]"raporTuru": "Sağlık Kurulu Raporu [cite: 29]",
+     "raporTuru": "Sağlık Kurulu Raporu",
      "receteDuzenleyenHekimler": {
       "branslar": [
        "TÜM_HEKİMLER"
       ],
-      [cite_start]"kural": "TÜMÜ [cite: 29]"
+      "kural": "TÜMÜ"
      }
     }
    }
@@ -2428,25 +2428,25 @@
    "output": {
     "kuralId": "EK4F.Madde82",
     "kaynakBelge": "EK-4/F",
-    [cite_start]"etkenMadde": "Benzidamin hidroklorür içeren vajinal çözelti [cite: 128]",
-    [cite_start]"endikasyon": "Yalnızca radyoterapi tedavisi ile gelişen vajinal radyomukozit tedavisi [cite: 129]",
+    "etkenMadde": "Benzidamin hidroklorür içeren vajinal çözelti [cite: 128]",
+    "endikasyon": "Yalnızca radyoterapi tedavisi ile gelişen vajinal radyomukozit tedavisi",
     "gereklilikler": {
-     [cite_start]"raporTuru": "Sağlık Raporu (Uzman Hekim Raporu) [cite: 129]",
-     [cite_start]"raporIcerigi": "Bu durumun belirtildiği [cite: 129]",
+     "raporTuru": "Sağlık Raporu (Uzman Hekim Raporu)",
+     "raporIcerigi": "Bu durumun belirtildiği",
      "raporDuzenleyenHekimler": {
       "branslar": [
        "Kadın Hastalıkları ve Doğum"
       ],
-      [cite_start]"kural": "SADECE_BU [cite: 129]"
+      "kural": "SADECE_BU"
      },
      "receteDuzenleyenHekimler": {
       "branslar": [
        "Kadın Hastalıkları ve Doğum"
       ],
-      [cite_start]"kural": "SADECE_BU [cite: 129]"
+      "kural": "SADECE_BU"
      }
     },
-    [cite_start]"dozKisitlamasi": "En fazla 1 aylık dozda [cite: 129]"
+    "dozKisitlamasi": "En fazla 1 aylık dozda"
    }
   },
   {
@@ -2463,8 +2463,7 @@
        "İç Hastalıkları",
        "Çocuk Sağlığı ve Hastalıkları"
       ],
-      "kural": "SADECE_BU_UZMAN_HEKIMLER",
-      [cite_start]"kaynak": "[cite: 22]"
+      "kural": "SADECE_BU_UZMAN_HEKIMLER"
      }
     },
     "kosul_2_Raporlu": {
@@ -2474,15 +2473,13 @@
        "İç Hastalıkları",
        "Çocuk Sağlığı ve Hastalıkları"
       ],
-      "kural": "SADECE_BU_UZMAN_HEKIMLER",
-      [cite_start]"kaynak": "[cite: 22]"
+      "kural": "SADECE_BU_UZMAN_HEKIMLER"
      },
      "receteDuzenleyenHekimler": {
       "branslar": [
        "TÜM_HEKİMLER"
       ],
-      "kural": "TÜMÜ",
-      [cite_start]"kaynak": "[cite: 22]"
+      "kural": "TÜMÜ"
      }
     }
    }
@@ -2504,8 +2501,7 @@
       "branslar": [
        "Psikiyatri"
       ],
-      "kural": "SADECE_BU_UZMAN_HEKIMLER",
-      [cite_start]"kaynak": "[cite: 22]"
+      "kural": "SADECE_BU_UZMAN_HEKIMLER"
      }
     },
     "kosul_2_Raporlu": {
@@ -2514,15 +2510,13 @@
       "branslar": [
        "Psikiyatri"
       ],
-      "kural": "SADECE_BU_UZMAN_HEKIMLER",
-      [cite_start]"kaynak": "[cite: 22]"
+      "kural": "SADECE_BU_UZMAN_HEKIMLER"
      },
      "receteDuzenleyenHekimler": {
       "branslar": [
        "TÜM_HEKİMLER"
       ],
-      "kural": "TÜMÜ",
-      [cite_start]"kaynak": "[cite: 22]"
+      "kural": "TÜMÜ"
      }
     }
    }
@@ -2543,7 +2537,7 @@
        "Çocuk Cerrahi"
       ],
       "kural": "SADECE_BU_UZMAN_HEKIMLER",
-      [cite_start]"kaynak": "[cite: 30]"
+      "kaynak": "[cite: 30]"
      }
     },
     "kosul_2_Raporlu": {
@@ -2555,14 +2549,13 @@
        "Çocuk Cerrahi"
       ],
       "kural": "SADECE_BU_UZMAN_HEKIMLER",
-      [cite_start]"kaynak": "[cite: 30, 31]"
+      "kaynak": "[cite: 30, 31]"
      },
      "receteDuzenleyenHekimler": {
       "branslar": [
        "TÜM_HEKİMLER"
       ],
-      "kural": "TÜMÜ",
-      [cite_start]"kaynak": "[cite: 31]"
+      "kural": "TÜMÜ"
      }
     }
    }
@@ -2583,8 +2576,7 @@
        "Pediyatrik Cerrahi",
        "Genel Cerrahi"
       ],
-      "kural": "SADECE_BU_UZMAN_HEKIMLER",
-      [cite_start]"kaynak": "[cite: 31]"
+      "kural": "SADECE_BU_UZMAN_HEKIMLER"
      }
     },
     "kosul_2_Raporlu": {
@@ -2596,15 +2588,13 @@
        "Pediyatrik Cerrahi",
        "Genel Cerrahi"
       ],
-      "kural": "SADECE_BU_UZMAN_HEKIMLER",
-      [cite_start]"kaynak": "[cite: 31]"
+      "kural": "SADECE_BU_UZMAN_HEKIMLER"
      },
      "receteDuzenleyenHekimler": {
       "branslar": [
        "TÜM_HEKİMLER"
       ],
-      "kural": "TÜMÜ",
-      [cite_start]"kaynak": "[cite: 31]"
+      "kural": "TÜMÜ"
      }
     }
    }
@@ -2623,8 +2613,7 @@
        "Nefroloji",
        "Üroloji"
       ],
-      "kural": "SADECE_BU_UZMAN_HEKIMLER",
-      [cite_start]"kaynak": "[cite: 31, 32]"
+      "kural": "SADECE_BU_UZMAN_HEKIMLER"
      }
     },
     "kosul_2_Raporlu": {
@@ -2635,15 +2624,13 @@
        "Nefroloji",
        "Üroloji"
       ],
-      "kural": "SADECE_BU_UZMAN_HEKIMLER",
-      [cite_start]"kaynak": "[cite: 32]"
+      "kural": "SADECE_BU_UZMAN_HEKIMLER"
      },
      "receteDuzenleyenHekimler": {
       "branslar": [
        "TÜM_HEKİMLER"
       ],
-      "kural": "TÜMÜ",
-      [cite_start]"kaynak": "[cite: 32]"
+      "kural": "TÜMÜ"
      }
     }
    }
@@ -2662,8 +2649,7 @@
        "İç Hastalıkları",
        "Genel Cerrahi"
       ],
-      "kural": "SADECE_BU_UZMAN_HEKIMLER",
-      [cite_start]"kaynak": "[cite: 22]"
+      "kural": "SADECE_BU_UZMAN_HEKIMLER"
      }
     },
     "kosul_2_Raporlu": {
@@ -2673,15 +2659,13 @@
        "İç Hastalıkları",
        "Genel Cerrahi"
       ],
-      "kural": "SADECE_BU_UZMAN_HEKIMLER",
-      [cite_start]"kaynak": "[cite: 22]"
+      "kural": "SADECE_BU_UZMAN_HEKIMLER"
      },
      "receteDuzenleyenHekimler": {
       "branslar": [
        "TÜM_HEKİMLER"
       ],
-      "kural": "TÜMÜ",
-      [cite_start]"kaynak": "[cite: 22]"
+      "kural": "TÜMÜ"
      }
     }
    }
@@ -2700,8 +2684,7 @@
        "İç Hastalıkları",
        "Çocuk Sağlığı ve Hastalıkları"
       ],
-      "kural": "SADECE_BU_UZMAN_HEKIMLER",
-      [cite_start]"kaynak": "[cite: 22, 23]"
+      "kural": "SADECE_BU_UZMAN_HEKIMLER"
      }
     },
     "kosul_2_Raporlu": {
@@ -2711,15 +2694,13 @@
        "İç Hastalıkları",
        "Çocuk Sağlığı ve Hastalıkları"
       ],
-      "kural": "SADECE_BU_UZMAN_HEKIMLER",
-      [cite_start]"kaynak": "[cite: 22, 23]"
+      "kural": "SADECE_BU_UZMAN_HEKIMLER"
      },
      "receteDuzenleyenHekimler": {
       "branslar": [
        "TÜM_HEKİMLER"
       ],
-      "kural": "TÜMÜ",
-      [cite_start]"kaynak": "[cite: 22, 23]"
+      "kural": "TÜMÜ"
      }
     }
    }
@@ -2737,15 +2718,13 @@
       "branslar": [
        "Hematoloji"
       ],
-      "kural": "SADECE_BU",
-      [cite_start]"kaynak": "[cite: 23]"
+      "kural": "SADECE_BU"
      },
      "receteDuzenleyenHekimler": {
       "branslar": [
        "TÜM_HEKİMLER"
       ],
-      "kural": "TÜMÜ",
-      [cite_start]"kaynak": "[cite: 23]"
+      "kural": "TÜMÜ"
      }
     }
    }
@@ -2764,8 +2743,7 @@
        "İç Hastalıkları",
        "Genel Cerrahi"
       ],
-      "kural": "SADECE_BU_UZMAN_HEKIMLER",
-      [cite_start]"kaynak": "[cite: 31]"
+      "kural": "SADECE_BU_UZMAN_HEKIMLER"
      }
     },
     "kosul_2_Raporlu": {
@@ -2775,15 +2753,13 @@
        "İç Hastalıkları",
        "Genel Cerrahi"
       ],
-      "kural": "SADECE_BU_UZMAN_HEKIMLER",
-      [cite_start]"kaynak": "[cite: 31]"
+      "kural": "SADECE_BU_UZMAN_HEKIMLER"
      },
      "receteDuzenleyenHekimler": {
       "branslar": [
        "TÜM_HEKİMLER"
       ],
-      "kural": "TÜMÜ",
-      [cite_start]"kaynak": "[cite: 31]"
+      "kural": "TÜMÜ"
      }
     }
    }
@@ -2802,8 +2778,7 @@
        "Gastroenteroloji",
        "İç Hastalıkları"
       ],
-      "kural": "SADECE_BU_UZMAN_HEKIMLER",
-      [cite_start]"kaynak": "[cite: 31]"
+      "kural": "SADECE_BU_UZMAN_HEKIMLER"
      }
     },
     "kosul_2_Raporlu": {
@@ -2813,15 +2788,13 @@
        "Gastroenteroloji",
        "İç Hastalıkları"
       ],
-      "kural": "SADECE_BU_UZMAN_HEKIMLER",
-      [cite_start]"kaynak": "[cite: 31]"
+      "kural": "SADECE_BU_UZMAN_HEKIMLER"
      },
      "receteDuzenleyenHekimler": {
       "branslar": [
        "TÜM_HEKİMLER"
       ],
-      "kural": "TÜMÜ",
-      [cite_start]"kaynak": "[cite: 31]"
+      "kural": "TÜMÜ"
      }
     }
    }
