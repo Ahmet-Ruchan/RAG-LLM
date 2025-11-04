@@ -5,7 +5,7 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 import os
 
 # Read the SUT rules text file
-with open("test.csv", "r", encoding="utf-8") as f:
+with open("dataset.json", "r", encoding="utf-8") as f:
     text_content = f.read()
 
 embeddings = OllamaEmbeddings(model="mxbai-embed-large")
