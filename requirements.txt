@@ -1,5 +1,1 @@
-langchain
-langchain-ollama
-langchain-chroma
-langchain-core
-langchain-text-splitters
+python-dotenv
