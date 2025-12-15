@@ -7,5 +7,7 @@ langchain-google-genai
 openai==1.59.8
 python-dotenv==1.0.1
 fastapi==0.111.1
-langserve==0.2.2
+langserve>=0.0.30
+httpx>=0.24.0,<0.28.0
 sse_starlette==2.1.2
+uvicorn
