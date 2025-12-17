@@ -21,3 +21,8 @@ faiss-cpu==1.8.0.post1
 tqdm==4.66.4
 tiktoken==0.7.0
 
+flask~=3.0.0
+functions~=0.7.0
+packaging~=23.2
+requests~=2.31.0
+waitress
