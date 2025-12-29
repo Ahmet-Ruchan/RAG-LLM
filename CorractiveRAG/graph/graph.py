@@ -6,14 +6,14 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(
 
 from dotenv import load_dotenv
 
-from langgraph.graph import END, StateGraph
+from langgraph.graph import END, StateGraph, START
 
-from graph.chains.answer_grader import answer_grader
-from graph.chains.hallucination_grader import hallucination_grader
-from graph.chains.router import question_router, RouteQuery
-from graph.node_constants import RETRIEVE, GRADE_DOCUMENTS, GENERATE, WEBSEARCH
-from graph.nodes import generate, grade_documents, retrieve, web_search
-from graph.state import GraphState
+from CorractiveRAG.graph.chains.answer_grader import answer_grader
+from CorractiveRAG.graph.chains.hallucination_grader import hallucination_grader
+from CorractiveRAG.graph.chains.router import question_router, RouteQuery
+from CorractiveRAG.graph.node_constant import RETRIEVE, GRADE_DOCUMENTS, GENERATE, WEBSEARCH
+from CorractiveRAG.graph.nodes import generate, grade_documents, retrieve, web_search
+from CorractiveRAG.graph.state import GraphState
 
 load_dotenv()
 
@@ -22,9 +22,7 @@ def decide_to_generate(state):
     print("---ASSESS GRADED DOCUMENTS---")
 
     if state["web_search"]:
-        print(
-            "---DECISION: NOT ALL DOCUMENTS ARE NOT RELEVANT TO QUESTION, INCLUDE WEB SEARCH---"
-        )
+        print("---DECISION: NOT ALL DOCUMENTS ARE RELEVANT, INCLUDE WEB SEARCH---")
         return WEBSEARCH
     else:
         print("---DECISION: GENERATE---")
@@ -70,19 +68,27 @@ def route_question(state: GraphState) -> str:
 
 workflow = StateGraph(GraphState)
 
+# Node'ları ekle
 workflow.add_node(RETRIEVE, retrieve)
 workflow.add_node(GRADE_DOCUMENTS, grade_documents)
 workflow.add_node(GENERATE, generate)
 workflow.add_node(WEBSEARCH, web_search)
 
-workflow.set_conditional_entry_point(
+# Entry point - START'tan conditional routing
+workflow.add_conditional_edges(
+    START,
     route_question,
     {
         WEBSEARCH: WEBSEARCH,
         RETRIEVE: RETRIEVE,
     },
 )
+
+# Normal edge'ler
 workflow.add_edge(RETRIEVE, GRADE_DOCUMENTS)
+workflow.add_edge(WEBSEARCH, GENERATE)
+
+# Conditional edge'ler
 workflow.add_conditional_edges(
     GRADE_DOCUMENTS,
     decide_to_generate,
@@ -101,9 +107,7 @@ workflow.add_conditional_edges(
         "not useful": WEBSEARCH,
     },
 )
-workflow.add_edge(WEBSEARCH, GENERATE)
-workflow.add_edge(GENERATE, END)
 
 app = workflow.compile()
 
-#app.get_graph().draw_mermaid_png(output_file_path="graph.png")
+# app.get_graph().draw_mermaid_png(output_file_path="graph.png")

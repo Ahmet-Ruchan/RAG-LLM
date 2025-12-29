@@ -4,8 +4,8 @@ import os
 # Proje kök dizinini (Corrective RAG) path'e ekle
 sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 
-from graph.chains.generation import generation_chain
-from graph.state import GraphState
+from CorractiveRAG.graph.chains.generation import generation_chain
+from CorractiveRAG.graph.state import GraphState
 from typing import Any, Dict
 
 def generate(state: GraphState) -> Dict[str, Any]:

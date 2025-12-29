@@ -5,7 +5,7 @@ import os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 
 from typing import Any, Dict
-from graph.state import GraphState
+from CorractiveRAG.graph.state import GraphState
 from langchain_community.tools.tavily_search import TavilySearchResults
 from langchain.schema import Document
 

@@ -23,3 +23,4 @@ if __name__ == "__main__":
     print("*" * 50)
     print("\nGemini Response:")
     print(response_gemini.content , "\n")
+

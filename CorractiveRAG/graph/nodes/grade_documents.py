@@ -5,8 +5,8 @@ import os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 
 from typing import Any, Dict
-from graph.chains.retrieval_grader import retrieval_grader
-from graph.state import GraphState
+from CorractiveRAG.graph.chains.retrieval_grader import retrieval_grader
+from CorractiveRAG.graph.state import GraphState
 
 def grade_documents(state: GraphState) -> Dict[str, Any]:
     """
