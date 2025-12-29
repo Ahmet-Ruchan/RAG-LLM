@@ -7,6 +7,7 @@ from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_core.pydantic_v1 import BaseModel, Field
 from typing import Literal
 
+
 """
 load_dotenv()
 """

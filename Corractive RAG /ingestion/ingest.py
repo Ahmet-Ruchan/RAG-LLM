@@ -30,7 +30,7 @@ vectorstore = Chroma.from_documents(
     persist_directory="./.chromadb/corractive-rag"
 )
 
-retreiver = Chroma(
+retriever = Chroma(
     collection_name="corractive-rag",
     persist_directory="./.chromadb/corractive-rag",
     embedding_function=OpenAIEmbeddings()
